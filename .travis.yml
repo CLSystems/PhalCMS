@@ -79,3 +79,4 @@ addons:
   hosts:
     - db
     - phanbook.dev
+
