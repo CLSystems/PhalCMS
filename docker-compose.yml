@@ -1,0 +1,24 @@
+version: '3'
+
+services:
+
+  phalcms:
+    build: .
+    volumes:
+      - ./src:/var/www/html
+    ports:
+      - 8000:80
+    depends_on:
+      - mysql
+
+  mysql:
+    image: mysql:5.7
+    restart: always
+    command: ['--character-set-server=utf8mb4', '--collation-server=utf8mb4_unicode_ci']
+    volumes:
+      - ./docker/db:/var/lib/mysql
+    environment:
+      - MYSQL_ROOT_PASSWORD=root
+      - MYSQL_DATABASE=phalcms
+      - MYSQL_USER=dbuser
+      - MYSQL_PASSWORD=dbpass
