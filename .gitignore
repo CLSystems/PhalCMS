@@ -2,7 +2,6 @@
 docker/db/*
 src/vendor/*
 src/cache/*
-src/app/Tmpl/Site/PhalCMS/Tmpl/*
 src/public/assets/compressed/*
 src/public/assets/images/printer/*
 src/public/upload/thumbs/*

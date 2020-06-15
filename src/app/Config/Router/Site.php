@@ -1,5 +1,4 @@
 <?php
-/** @var Phalcon\Mvc\Router $router */
 
 // Main display
 $router

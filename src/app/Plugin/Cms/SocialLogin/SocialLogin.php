@@ -15,7 +15,6 @@ class SocialLogin extends Plugin
 {
 	public function onConstruct()
 	{
-		require_once __DIR__ . '/vendor/autoload.php';
 		Asset::addFiles(
 			[
 				__DIR__ . '/Asset/Css/social-login.css',
