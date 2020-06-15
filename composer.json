@@ -11,7 +11,7 @@
     "uikit"
   ],
   "homepage": "https://github.com/CLSystems/PhalCMS",
-  "license": "GPL-2.0-or-later",
+  "license": "MIT",
   "authors": [
     {
       "name": "CLSystems - Jeroen Guyt",
