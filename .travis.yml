@@ -40,18 +40,18 @@ before_install:
   - if [ -n "$GH_TOKEN" ]; then composer config github-oauth.github.com ${GH_TOKEN}; fi;
   - travis_retry composer install --prefer-dist --no-interaction --ignore-platform-reqs
   - travis_retry composer require --dev "phalcon/zephir:0.9.11" --ignore-platform-reqs
-  - ( bash src/tests/_ci/install_zephir.sh )
+  - ( bash ./src/tests/_ci/install_zephir.sh )
 
 install:
   - git clone -q --depth=1 https://github.com/phalcon/cphalcon.git -b ${PHALCON_VERSION}
   - '( cd cphalcon; zephir fullclean && zephir generate $ZEND_BACKEND )'
   - (cd cphalcon/ext; export CFLAGS="-g3 -O1 -std=gnu90 -Wall -DZEPHIR_RELEASE=1"; /usr/bin/phpize &> /dev/null && ./configure --silent --enable-phalcon &> /dev/null && make --silent -j2 &> /dev/null && make --silent install)
-  - phpenv config-add cphalcon/tests/_ci/phalcon.ini
+  - phpenv config-add ./src/tests/_ci/phalcon.ini
 
 before_script:
   - echo 'CREATE DATABASE phalcms CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci' | mysql -u root
   - cat src/install.sql | mysql -uroot phalcms
-  - cp ./tests/.env.travis .env
+  - cp ./src/tests/.env.travis .env
   - php -S 127.0.0.1:8000 -t public/ .htrouter.php >/dev/null 2>&1 &
   - ulimit -c unlimited -S || true
 
