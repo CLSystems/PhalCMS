@@ -3,9 +3,9 @@
 set -o pipefail
 # trace ERR through 'time command' and other functions
 set -o errtrace
-# set -u : exit the script if you try to use an uninitialised variable
+# set -u to exit the script if you try to use an uninitialised variable
 set -o nounset
-# set -e : exit the script if any statement returns a non-true return value
+# set -e to exit the script if any statement returns a non-true return value
 set -o errexit
 CURRENT_DIR=$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )
 TRAVIS_BUILD_DIR="${TRAVIS_BUILD_DIR:-$(dirname $(dirname $CURRENT_DIR))}"
