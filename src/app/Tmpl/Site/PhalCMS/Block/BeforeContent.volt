@@ -15,7 +15,7 @@
                     <!--<img src="{{ constant('DOMAIN') ~ '/assets/images/logo.png' }}" width="55" height="55"
                          alt="Logo"/>-->
                     <span class="uk-text-small uk-text-muted uk-margin-small-left">
-                        <h2>Tuinkas Montage</h2>
+                        <h2>{{ siteName | escape }}</h2>
                     </span>
                 </a>
             </div>
