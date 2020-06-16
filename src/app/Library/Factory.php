@@ -60,7 +60,7 @@ class Factory
 
 		require_once BASE_PATH . '/app/Config/Define.php';
 		require_once BASE_PATH . '/app/Config/Loader.php';
-		require_once BASE_PATH . '/vendor/autoload.php';
+		require_once BASE_PATH . '/../../vendor/autoload.php';
 
 		return new Ini(BASE_PATH . '/config.ini', INI_SCANNER_NORMAL);
 	}

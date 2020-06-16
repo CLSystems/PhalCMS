@@ -17,6 +17,10 @@
       "name": "CLSystems - Jeroen Guyt",
       "email": "info@clsystems.nl",
       "role": "Developer"
+    },
+    {
+      "name": "Contributors",
+      "homepage": "https://github.com/CLSystems/PhalCMS/graphs/contributors"
     }
   ],
   "require": {
