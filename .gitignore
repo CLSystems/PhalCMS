@@ -1,6 +1,7 @@
 .idea
+composer.lock
 docker/db/*
-src/vendor/*
+vendor/*
 src/cache/*
 src/public/assets/compressed/*
 src/public/assets/images/printer/*
