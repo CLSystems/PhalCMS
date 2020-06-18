@@ -9,7 +9,6 @@ php:
 
 env:
     matrix:
-        - PSR_VERSION="v1.0.0"
         # - PHALCON_VERSION="v3.1.0"
         # - PHALCON_VERSION="v3.2.0"
         # - PHALCON_VERSION="v3.3.2"
@@ -20,8 +19,8 @@ services:
     - redis-server
 
 install:
-    - git clone --depth=1 -q --branch=${PSR_VERSION} https://github.com/jbboehr/php-psr.git
-    - '(cd php-psr; bash install &>/dev/null && bash ../.ci/travis_php.sh &> /dev/null && cd ..;)'
+    - git clone --depth=1 -q --branch=v1.0.0 https://github.com/jbboehr/php-psr.git
+    - '(cd php-psr; bash install &>/dev/null && bash .ci/travis_php.sh &> /dev/null && cd ..;)'
     - git clone --depth=1 -q --branch=${PHALCON_VERSION} https://github.com/phalcon/cphalcon.git
     - '(cd cphalcon/build; bash install &>/dev/null && phpenv config-add ../.ci/phalcon.ini &> /dev/null && cd ../..;)'
     - echo 'extension = redis.so' >> ~/.phpenv/versions/$(phpenv version-name)/etc/conf.d/travis.ini
