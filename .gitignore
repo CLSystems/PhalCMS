@@ -1,10 +1,12 @@
 .idea
 composer.lock
+composer.phar
 docker/db/*
 vendor/*
 src/cache/*
 src/public/assets/compressed/*
 src/public/assets/images/printer/*
 src/public/upload/thumbs/*
+src/public/stats/*
 src/config.ini
 src/tests/.phpunit.result.cache

@@ -1,8 +1,0 @@
-.idea
-app/Plugin/Cms/SocialLogin/vendor/
-/cache/*
-/public/assets/compressed
-/public/stats
-/vendor
-composer.lock
-config.ini
