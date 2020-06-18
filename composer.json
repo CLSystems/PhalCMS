@@ -36,7 +36,7 @@
 	},
 	"require-dev": {
 		"phpunit/phpcov": "^7",
-		"phpunit/phpunit": "^8",
+		"phpunit/phpunit": "^9",
 		"fzaninotto/faker": "^1.6",
 		"squizlabs/php_codesniffer": "^2.7",
 		"codeception/codeception": "^4",
