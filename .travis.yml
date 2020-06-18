@@ -21,11 +21,11 @@ install:
     - pecl install --force psr
     - git clone --depth=1 -q --branch=${PHALCON_VERSION} https://github.com/phalcon/cphalcon.git
     - '(cd cphalcon/build; bash install &>/dev/null && phpenv config-add ../.ci/phalcon.ini &> /dev/null && cd ../..;)'
-    - echo 'extension = redis.so' >> ~/.phpenv/versions/$(phpenv version-name)/etc/conf.d/travis.ini
+    - echo 'extension = phalcon.so' >> ~/.phpenv/versions/$(phpenv version-name)/etc/conf.d/travis.ini
     - composer install --prefer-dist
 
 before_script:
-    - for P in src/Helper; do find $P -type f -name '*.php' -exec php -l {} \;; done
+    - for P in src tests; do find $P -type f -name '*.php' -exec php -l {} \;; done
     - mkdir -p example/.var/mail example/.var/sql example/.var/view
     - touch example/.var/db.db
 
