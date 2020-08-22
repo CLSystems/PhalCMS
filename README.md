@@ -81,3 +81,10 @@ docker-compose up -d
 ```
 
 Browse http://localhost:8000 and enjoy
+
+## CLI
+When located in main folder (1 step above /src) do:
+```
+php cli.php task:main
+```
+NB: CLI will only function AFTER config.ini has been created.
