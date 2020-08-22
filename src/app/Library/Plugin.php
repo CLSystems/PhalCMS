@@ -1,6 +1,6 @@
 <?php
 
-namespace CLSystems\PhalCMS\Lib;
+namespace CLSystems\PhalCMS\Library;
 
 use CLSystems\PhalCMS\Lib\Factory;
 use CLSystems\Php\Registry;

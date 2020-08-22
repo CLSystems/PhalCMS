@@ -1,7 +1,5 @@
 <?php
 
-declare(strict_types=1);
-
 use Phalcon\Cli\Console;
 use Phalcon\Cli\Dispatcher;
 use Phalcon\Config\Adapter\Ini;
@@ -10,14 +8,13 @@ use Phalcon\Di\FactoryDefault\Cli as CliDI;
 use Phalcon\Exception as PhalconException;
 use Phalcon\Loader;
 
-define('BASE_PATH', __DIR__ . '/src');
-require_once BASE_PATH . '/app/Library/Factory.php';
+require_once __DIR__ . '/src/app/Library/Factory.php';
 
 $loader = new Loader();
 $loader->registerNamespaces(
-	[
-		'CLSystems\\PhalCMS' => 'src/',
-	]
+    [
+        'CLSystems\\PhalCMS' => 'src/',
+    ]
 );
 $loader->register();
 
@@ -33,19 +30,19 @@ $config = new Ini(BASE_PATH . '/config.ini', INI_SCANNER_NORMAL);
 $dbPrefix = $config->path('DB.PREFIX');
 
 try {
-	$db = new Mysql(
-		[
-			'host'     => $config->path('DB.HOST'),
-			'username' => $config->path('DB.USER'),
-			'password' => $config->path('DB.PASS'),
-			'dbname'   => $config->path('DB.NAME'),
-			'charset'  => 'utf8mb4',
-		]
-	);
+    $db = new Mysql(
+        [
+            'host'     => $config->path('DB.HOST'),
+            'username' => $config->path('DB.USER'),
+            'password' => $config->path('DB.PASS'),
+            'dbname'   => $config->path('DB.NAME'),
+            'charset'  => 'utf8mb4',
+        ]
+    );
 
 }
 catch (Exception $exception) {
-	die($exception->getCode() . ' - ' . $exception->getMessage());
+    die($exception->getCode() . ' - ' . $exception->getMessage());
 }
 
 $container->getShared('modelsManager')->setModelPrefix($dbPrefix);

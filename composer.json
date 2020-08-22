@@ -44,7 +44,7 @@
 	},
 	"autoload": {
 		"psr-4": {
-			"CLSystems\\PhalCMS\\": "src/"
+			"CLSystems\\PhalCMS\\": "src/app/"
 		}
 	}
 }
