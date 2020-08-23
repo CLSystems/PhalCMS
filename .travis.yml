@@ -21,7 +21,7 @@ install:
     - pecl install --force psr
     - git clone --depth=1 -q --branch=${PHALCON_VERSION} https://github.com/phalcon/cphalcon.git
     - '(cd cphalcon/build; bash install &>/dev/null && phpenv config-add ../.ci/phalcon.ini &> /dev/null && cd ../..;)'
-    - composer install --prefer-dist
+    - composer install --prefer-dist --no-dev
 
 before_script:
-    - for P in src tests; do find $P -type f -name '*.php' -exec php -l {} \;; done
+    - for P in src; do find $P -type f -name '*.php' -exec php -l {} \;; done
