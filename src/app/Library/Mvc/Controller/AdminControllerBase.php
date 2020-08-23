@@ -52,7 +52,7 @@ class AdminControllerBase extends ControllerBase
 				$this->pickedView = $this->model;
 			}
 
-			$modelClass = 'CLSystems\\PhalCMS\\Lib\\Mvc\\Model\\' . $this->model;
+			$modelClass = 'CLSystems\\PhalCMS\\Library\\Mvc\\Model\\' . $this->model;
 
 			if (class_exists($modelClass))
 			{

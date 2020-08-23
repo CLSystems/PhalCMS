@@ -7,45 +7,84 @@
 			</a>
 		</li>
 		<li class="uk-nav-divider"></li>
-		<li class="{% if stristr(helper('Uri::getActive').getVar('uri'), 'post') %}uk-open {% endif %}uk-parent">
-			<a class="uk-nav-header">
-				{{ helper('IconSvg::render', 'pencil') }}
-				{{ _('posts') }}
-			</a>
+        <li class="{% if stristr(helper('Uri::getActive').getVar('uri'), 'post') %}uk-open {% endif %}uk-parent">
+            <a class="uk-nav-header">
+                {{ helper('IconSvg::render', 'pencil') }}
+                {{ _('posts') }}
+            </a>
 
-			<ul class="uk-nav-sub">
-				<li>
-					<a class="posts-post" href="{{ route('content/post/index') }}">
-						{{ helper('IconSvg::render', 'file-edit') }}
-						{{ _('posts') }}
-					</a>
-				</li>
-				<li>
-					<a class="posts-post-category" href="{{ route('content/post-category/index') }}">
-						{{ helper('IconSvg::render', 'albums') }}
-						{{ _('categories') }}
-					</a>
-				</li>
-				<li>
-					<a href="{{ route('post/comment/index') }}">
-						{{ helper('IconSvg::render', 'bubble') }}
-						{{ _('comments') }}
-					</a>
-				</li>
-				<li>
-					<a href="{{ route('group-field/post/index') }}">
-						{{ helper('IconSvg::render', 'albums') }}
-						{{ _('field-groups') }}
-					</a>
-				</li>
-				<li>
-					<a href="{{ route('field/post/index') }}">
-						{{ helper('IconSvg::render', 'field') }}
-						{{ _('fields') }}
-					</a>
-				</li>
-			</ul>
-		</li>
+            <ul class="uk-nav-sub">
+                <li>
+                    <a class="posts-post" href="{{ route('content/post/index') }}">
+                        {{ helper('IconSvg::render', 'file-edit') }}
+                        {{ _('posts') }}
+                    </a>
+                </li>
+                <li>
+                    <a class="posts-post-category" href="{{ route('content/post-category/index') }}">
+                        {{ helper('IconSvg::render', 'albums') }}
+                        {{ _('categories') }}
+                    </a>
+                </li>
+                <li>
+                    <a href="{{ route('post/comment/index') }}">
+                        {{ helper('IconSvg::render', 'bubble') }}
+                        {{ _('comments') }}
+                    </a>
+                </li>
+                <li>
+                    <a href="{{ route('group-field/post/index') }}">
+                        {{ helper('IconSvg::render', 'albums') }}
+                        {{ _('field-groups') }}
+                    </a>
+                </li>
+                <li>
+                    <a href="{{ route('field/post/index') }}">
+                        {{ helper('IconSvg::render', 'field') }}
+                        {{ _('fields') }}
+                    </a>
+                </li>
+            </ul>
+        </li>
+        <li class="{% if stristr(helper('Uri::getActive').getVar('uri'), 'product') %}uk-open {% endif %}uk-parent">
+            <a class="uk-nav-header">
+                {{ helper('IconSvg::render', 'pencil') }}
+                {{ _('products') }}
+            </a>
+
+            <ul class="uk-nav-sub">
+                <li>
+                    <a class="posts-post" href="{{ route('content/product/index') }}">
+                        {{ helper('IconSvg::render', 'file-edit') }}
+                        {{ _('products') }}
+                    </a>
+                </li>
+                <li>
+                    <a class="posts-post-category" href="{{ route('content/product-category/index') }}">
+                        {{ helper('IconSvg::render', 'albums') }}
+                        {{ _('categories') }}
+                    </a>
+                </li>
+                <li>
+                    <a href="{{ route('product/comment/index') }}">
+                        {{ helper('IconSvg::render', 'bubble') }}
+                        {{ _('comments') }}
+                    </a>
+                </li>
+                <li>
+                    <a href="{{ route('group-field/product/index') }}">
+                        {{ helper('IconSvg::render', 'albums') }}
+                        {{ _('field-groups') }}
+                    </a>
+                </li>
+                <li>
+                    <a href="{{ route('field/product/index') }}">
+                        {{ helper('IconSvg::render', 'field') }}
+                        {{ _('fields') }}
+                    </a>
+                </li>
+            </ul>
+        </li>
 
 		<li>
 			<a class="uk-nav-header home-media" href="{{ route('media/index') }}">

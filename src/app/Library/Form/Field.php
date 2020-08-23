@@ -236,7 +236,7 @@ abstract class Field
 
 		foreach ($rules as $rule)
 		{
-			$ruleClass = 'CLSystems\\PhalCMS\\Lib\\Form\\Rule\\' . $rule;
+			$ruleClass = 'CLSystems\\PhalCMS\\Library\\Form\\Rule\\' . $rule;
 
 			if (class_exists($ruleClass))
 			{

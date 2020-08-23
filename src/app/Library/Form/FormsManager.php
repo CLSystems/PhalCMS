@@ -4,71 +4,69 @@ namespace CLSystems\PhalCMS\Library\Form;
 
 class FormsManager
 {
-	protected $forms = [];
-	protected $messages = [];
+    protected $forms = [];
+    protected $messages = [];
 
-	/**
-	 * @param $formName
-	 *
-	 * @return Form
-	 */
+    /**
+     * @param $formName
+     *
+     * @return Form
+     */
 
-	public function get($formName)
-	{
-		return $this->forms[$formName];
-	}
+    public function get($formName)
+    {
+        return $this->forms[$formName];
+    }
 
-	public function set($formName, Form $form)
-	{
-		$this->forms[$formName] = $form;
+    public function set($formName, Form $form)
+    {
+        $this->forms[$formName] = $form;
 
-		return $this;
-	}
+        return $this;
+    }
 
-	public function has($formName)
-	{
-		return array_key_exists($formName, $this->forms);
-	}
+    public function has($formName)
+    {
+        return array_key_exists($formName, $this->forms);
+    }
 
-	public function getForms()
-	{
-		return $this->forms;
-	}
+    public function getForms()
+    {
+        return $this->forms;
+    }
 
-	public function remove($formName)
-	{
-		unset($this->forms[$formName]);
+    public function remove($formName)
+    {
+        unset($this->forms[$formName]);
 
-		return $this;
-	}
+        return $this;
+    }
 
-	public function count()
-	{
-		return count($this->forms);
-	}
+    public function count()
+    {
+        return count($this->forms);
+    }
 
-	public function getMessages()
-	{
-		return $this->messages;
-	}
+    public function getMessages()
+    {
+        return $this->messages;
+    }
 
-	public function bind($data)
-	{
-		$this->messages = [];
-		$validData      = [];
-		$isValid        = true;
+    public function bind($data)
+    {
+        $this->messages = [];
+        $validData = [];
+        $isValid = true;
 
-		foreach ($this->forms as $form)
-		{
-			$validData = array_merge($validData, $form->bind($data));
+        foreach ($this->forms as $form) {
+            $validData = array_merge($validData, $form->bind($data));
 
-			if (!$form->isValid())
-			{
-				$this->messages = array_merge($this->messages, $form->getMessages());
-				$isValid        = false;
-			}
-		}
+            if (!$form->isValid()) {
+                $this->messages = array_merge($this->messages, $form->getMessages());
+                $isValid = false;
+            }
+        }
 
-		return $isValid ? $validData : false;
-	}
+        return $isValid ? $validData : false;
+    }
 }

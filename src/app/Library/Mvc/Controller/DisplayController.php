@@ -81,7 +81,7 @@ class DisplayController extends ControllerBase
 
 		/** @var UcmItemModel $targetItem */
 		$context     = UcmItemHelper::prepareContext($result->context);
-		$targetClass = 'CLSystems\\PhalCMS\\Lib\\Mvc\\Model\\' . $context;
+		$targetClass = 'CLSystems\\PhalCMS\\Library\\Mvc\\Model\\' . $context;
 
 		if (!class_exists($targetClass)
 			|| !($targetItem = $targetClass::findFirst(['conditions' => 'id = ' . $result->id]))

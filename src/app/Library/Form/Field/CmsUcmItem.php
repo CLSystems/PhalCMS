@@ -32,7 +32,7 @@ class CmsUcmItem extends Select
 		}
 
 		$options    = parent::getOptions();
-		$modelClass = 'CLSystems\\PhalCMS\\Lib\\Mvc\\Model\\' . UcmItemHelper::prepareContext($this->context);
+		$modelClass = 'CLSystems\\PhalCMS\\Library\\Mvc\\Model\\' . UcmItemHelper::prepareContext($this->context);
 
 		if (!class_exists($modelClass))
 		{

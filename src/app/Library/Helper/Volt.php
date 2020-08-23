@@ -22,7 +22,7 @@ class Volt
 
 	public function compileFunction($name, $resolvedArgs, $exprArgs)
 	{
-		$helperPrefix = 'CLSystems\\PhalCMS\\Lib\\Helper\\';
+		$helperPrefix = 'CLSystems\\PhalCMS\\Library\\Helper\\';
 
 		switch ($name)
 		{
@@ -105,7 +105,7 @@ class Volt
 				return 'implode(PHP_EOL, ' . $resolvedArgs . ')';
 
 			case 'void':
-				return 'CLSystems\\PhalCMS\\Lib\\Helper\\Volt::voidFilter(' . $resolvedArgs . ')';
+				return 'CLSystems\\PhalCMS\\Library\\Helper\\Volt::voidFilter(' . $resolvedArgs . ')';
 
 			default:
 

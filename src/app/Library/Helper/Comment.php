@@ -26,7 +26,7 @@ class Comment
 
 		if (!isset($instances[$keyHash]))
 		{
-			$referenceClass             = 'CLSystems\\PhalCMS\\Lib\\Mvc\\Model\\' . UcmItem::prepareContext($referenceContext);
+			$referenceClass             = 'CLSystems\\PhalCMS\\Library\\Mvc\\Model\\' . UcmItem::prepareContext($referenceContext);
 			$queryBuilder               = Factory::getService('modelsManager')
 				->createBuilder()
 				->from(['comment' => UcmComment::class])
