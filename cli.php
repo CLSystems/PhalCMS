@@ -53,33 +53,29 @@ $container->setShared('console', $console);
 
 $arguments = [];
 foreach ($argv as $k => $arg) {
-    if ($k === 1) {
-        $arguments['task'] = $arg;
-    }
-    else {
-        if ($k === 2) {
-            $arguments['action'] = $arg;
-        }
-        else {
-            if ($k >= 3) {
-                $arguments['params'][] = $arg;
-            }
-        }
-    }
+	if ($k === 1) {
+		$arguments['task'] = $arg;
+	}
+	else if ($k === 2) {
+		$arguments['action'] = $arg;
+	}
+	else if ($k >= 3) {
+		$arguments['params'][] = $arg;
+	}
 }
 
 try {
-    $console->handle($arguments);
+	$console->handle($arguments);
 }
 catch (PhalconException $e) {
-    fwrite(STDERR, $e->getMessage() . PHP_EOL . ' - ' . $e->getTraceAsString());
-    exit(1);
+	fwrite(STDERR, $e->getMessage() . PHP_EOL . ' - ' . $e->getTraceAsString());
+	exit(1);
 }
 catch (Throwable $throwable) {
-    fwrite(STDERR, $throwable->getMessage() . PHP_EOL . ' - ' . $throwable->getTraceAsString());
-    exit(1);
+	fwrite(STDERR, $throwable->getMessage() . PHP_EOL . ' - ' . $throwable->getTraceAsString());
+	exit(1);
 }
 catch (Exception $exception) {
-    fwrite(STDERR, $exception->getMessage() . PHP_EOL . ' - ' . $exception->getTraceAsString());
-    exit(1);
+	fwrite(STDERR, $exception->getMessage() . PHP_EOL . ' - ' . $exception->getTraceAsString());
+	exit(1);
 }
