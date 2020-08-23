@@ -1,10 +1,10 @@
 <?php
 
-namespace CLSystems\PhalCMS\Lib\Mvc\Model;
+namespace CLSystems\PhalCMS\Library\Mvc\Model;
 
 use Phalcon\Db\Adapter\Pdo\Mysql;
-use CLSystems\PhalCMS\Lib\Form\Form;
-use CLSystems\PhalCMS\Lib\Factory;
+use CLSystems\PhalCMS\Library\Form\Form;
+use CLSystems\PhalCMS\Library\Factory;
 use CLSystems\Php\Registry;
 
 class UcmField extends ModelBase

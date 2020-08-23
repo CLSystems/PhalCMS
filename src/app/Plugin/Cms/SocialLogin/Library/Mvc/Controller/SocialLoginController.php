@@ -1,20 +1,20 @@
 <?php
 
-namespace CLSystems\PhalCMS\Lib\Mvc\Controller;
+namespace CLSystems\PhalCMS\Library\Mvc\Controller;
 
 use Phalcon\Mvc\Controller;
 use Phalcon\Mvc\Dispatcher;
 use Facebook\Exceptions\FacebookSDKException;
 use Google_Service_Oauth2;
 use Google_Service_Oauth2_Userinfoplus;
-use CLSystems\PhalCMS\Lib\Helper\Config;
-use CLSystems\PhalCMS\Lib\Helper\State;
-use CLSystems\PhalCMS\Lib\Helper\Event;
-use CLSystems\PhalCMS\Lib\Helper\Text;
-use CLSystems\PhalCMS\Lib\Helper\Uri;
+use CLSystems\PhalCMS\Library\Helper\Config;
+use CLSystems\PhalCMS\Library\Helper\State;
+use CLSystems\PhalCMS\Library\Helper\Event;
+use CLSystems\PhalCMS\Library\Helper\Text;
+use CLSystems\PhalCMS\Library\Helper\Uri;
 use CLSystems\PhalCMS\Plugin\Cms\SocialLogin\SocialLogin;
-use CLSystems\PhalCMS\Lib\Helper\User as CmsUser;
-use CLSystems\PhalCMS\Lib\Mvc\Model\User as UserModel;
+use CLSystems\PhalCMS\Library\Helper\User as CmsUser;
+use CLSystems\PhalCMS\Library\Mvc\Model\User as UserModel;
 
 class SocialLoginController extends Controller
 {

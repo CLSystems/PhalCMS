@@ -1,12 +1,12 @@
 <?php
 
-namespace CLSystems\PhalCMS\Lib\Mvc\Controller;
+namespace CLSystems\PhalCMS\Library\Mvc\Controller;
 
 use Phalcon\Image\Adapter\Gd;
 use Phalcon\Http\Response;
 use Phalcon\Mvc\Controller;
-use CLSystems\PhalCMS\Lib\Helper\Event;
-use CLSystems\PhalCMS\Lib\Helper\Config;
+use CLSystems\PhalCMS\Library\Helper\Event;
+use CLSystems\PhalCMS\Library\Helper\Config;
 
 class AssetsController extends Controller
 {

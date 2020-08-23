@@ -1,16 +1,16 @@
 <?php
 
-namespace CLSystems\PhalCMS\Lib\Mvc\Controller;
+namespace CLSystems\PhalCMS\Library\Mvc\Controller;
 
 use Phalcon\Mvc\Dispatcher;
-use CLSystems\PhalCMS\Lib\Helper\Text;
-use CLSystems\PhalCMS\Lib\Helper\Uri;
-use CLSystems\PhalCMS\Lib\Helper\User as CmsUser;
-use CLSystems\PhalCMS\Lib\Mvc\Model\User;
-use CLSystems\PhalCMS\Lib\Helper\Date;
-use CLSystems\PhalCMS\Lib\Helper\Language;
-use CLSystems\PhalCMS\Lib\Helper\Form as FormHelper;
-use CLSystems\PhalCMS\Lib\Form\FormsManager;
+use CLSystems\PhalCMS\Library\Helper\Text;
+use CLSystems\PhalCMS\Library\Helper\Uri;
+use CLSystems\PhalCMS\Library\Helper\User as CmsUser;
+use CLSystems\PhalCMS\Library\Mvc\Model\User;
+use CLSystems\PhalCMS\Library\Helper\Date;
+use CLSystems\PhalCMS\Library\Helper\Language;
+use CLSystems\PhalCMS\Library\Helper\Form as FormHelper;
+use CLSystems\PhalCMS\Library\Form\FormsManager;
 
 class AdminUserController extends AdminControllerBase
 {

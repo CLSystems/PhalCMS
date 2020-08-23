@@ -1,12 +1,12 @@
 <?php
 
-namespace CLSystems\PhalCMS\Lib\Mvc\Controller;
+namespace CLSystems\PhalCMS\Library\Mvc\Controller;
 
 use PDO;
 use Phalcon\Version;
 use Phalcon\Db\Adapter\Pdo\Mysql;
-use CLSystems\PhalCMS\Lib\Helper\Event;
-use CLSystems\PhalCMS\Lib\Helper\Widget;
+use CLSystems\PhalCMS\Library\Helper\Event;
+use CLSystems\PhalCMS\Library\Helper\Widget;
 
 class AdminIndexController extends ControllerBase
 {

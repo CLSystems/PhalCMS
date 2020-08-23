@@ -1,13 +1,13 @@
 <div class="uk-margin">
     <div class="uk-heading-line uk-text-center uk-margin">
-        <span><?= CLSystems\PhalCMS\Lib\Helper\Text::_('sl-or-login-with') ?></span>
+        <span><?= CLSystems\PhalCMS\Library\Helper\Text::_('sl-or-login-with') ?></span>
     </div>
 
     <?php if ($pluginConfig->get('params.facebookLogin') === 'Y') { ?>
         <div class="uk-margin-small">
             <a class="uk-button uk-width-1-1 SocialLogin-button-facebook" href="<?= $this->escaper->escapeHtmlAttr($fbLoginUrl) ?>">
                 <span uk-icon="icon: facebook"></span>
-                <?= CLSystems\PhalCMS\Lib\Helper\Text::_('sl-facebook') ?>
+                <?= CLSystems\PhalCMS\Library\Helper\Text::_('sl-facebook') ?>
             </a>
         </div>
     <?php } ?>
@@ -16,7 +16,7 @@
         <div class="uk-margin-small">
             <a class="uk-button uk-width-1-1 SocialLogin-button-google" href="<?= $this->escaper->escapeHtmlAttr($ggLoginUrl) ?>">
                 <span uk-icon="icon: google"></span>
-                <?= CLSystems\PhalCMS\Lib\Helper\Text::_('sl-google') ?>
+                <?= CLSystems\PhalCMS\Library\Helper\Text::_('sl-google') ?>
             </a>
         </div>
     <?php } ?>

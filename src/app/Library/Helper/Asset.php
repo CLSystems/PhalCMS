@@ -1,9 +1,9 @@
 <?php
 
-namespace CLSystems\PhalCMS\Lib\Helper;
+namespace CLSystems\PhalCMS\Library\Helper;
 
 use Phalcon\Assets\Manager as AssetsManager;
-use CLSystems\PhalCMS\Lib\Factory;
+use CLSystems\PhalCMS\Library\Factory;
 
 class Asset extends AssetsManager
 {
@@ -61,7 +61,7 @@ class Asset extends AssetsManager
 		], $options));
 		Factory::getService('assets')
 			->addInlineJs(<<<JAVASCRIPT
-$('{$selector}:not(.not-chosen)').addClass('has-chosen').chosen({$options}); 
+$('{$selector}:not(.not-chosen)').addClass('has-chosen').chosen({$options});
 JAVASCRIPT
 			);
 	}
@@ -118,7 +118,7 @@ JAVASCRIPT
 		self::tagEditorCore();
 		$options = json_encode($options);
 		Factory::getService('assets')->addInlineJs(<<<JAVASCRIPT
-$('{$selector}').addClass('tag-area').tagEditor({$options}); 
+$('{$selector}').addClass('tag-area').tagEditor({$options});
 JAVASCRIPT
 		);
 	}

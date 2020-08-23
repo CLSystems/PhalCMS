@@ -3,10 +3,10 @@
 namespace CLSystems\PhalCMS\Widget\FlashNews;
 
 use Phalcon\Paginator\Adapter\QueryBuilder as Paginator;
-use CLSystems\PhalCMS\Lib\Factory;
-use CLSystems\PhalCMS\Lib\Widget;
-use CLSystems\PhalCMS\Lib\Mvc\Model\Post;
-use CLSystems\PhalCMS\Lib\Mvc\Model\PostCategory;
+use CLSystems\PhalCMS\Library\Factory;
+use CLSystems\PhalCMS\Library\Widget;
+use CLSystems\PhalCMS\Library\Mvc\Model\Post;
+use CLSystems\PhalCMS\Library\Mvc\Model\PostCategory;
 
 class FlashNews extends Widget
 {

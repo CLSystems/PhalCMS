@@ -1,6 +1,6 @@
 <?php
 
-namespace CLSystems\PhalCMS\Lib\Form;
+namespace CLSystems\PhalCMS\Library\Form;
 
 class FormsManager
 {

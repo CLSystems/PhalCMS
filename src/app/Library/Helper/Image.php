@@ -1,10 +1,10 @@
 <?php
 
-namespace CLSystems\PhalCMS\Lib\Helper;
+namespace CLSystems\PhalCMS\Library\Helper;
 
 use Phalcon\Image\Adapter\Gd;
 use Phalcon\Image\Enum;
-use function CLSystems\PhalCMS\Lib\debugVar;
+use function CLSystems\PhalCMS\Library\debugVar;
 
 class Image
 {

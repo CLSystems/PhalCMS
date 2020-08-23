@@ -1,6 +1,6 @@
 <?php
 
-use CLSystems\PhalCMS\Lib\Factory;
+use CLSystems\PhalCMS\Library\Factory;
 
 define('BASE_PATH', dirname(__DIR__));
 define('TEST_PHPUNIT_MODE', true);

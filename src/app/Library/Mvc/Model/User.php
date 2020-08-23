@@ -1,15 +1,15 @@
 <?php
 
-namespace CLSystems\PhalCMS\Lib\Mvc\Model;
+namespace CLSystems\PhalCMS\Library\Mvc\Model;
 
 use Phalcon\Security;
-use CLSystems\PhalCMS\Lib\Helper\Text;
-use CLSystems\PhalCMS\Lib\Helper\User as CmsUser;
-use CLSystems\PhalCMS\Lib\Helper\State;
-use CLSystems\PhalCMS\Lib\Form\Form;
-use CLSystems\PhalCMS\Lib\Factory;
+use CLSystems\PhalCMS\Library\Helper\Text;
+use CLSystems\PhalCMS\Library\Helper\User as CmsUser;
+use CLSystems\PhalCMS\Library\Helper\State;
+use CLSystems\PhalCMS\Library\Form\Form;
+use CLSystems\PhalCMS\Library\Factory;
 use Exception;
-use function CLSystems\PhalCMS\Lib\debugVar;
+use function CLSystems\PhalCMS\Library\debugVar;
 
 class User extends ModelBase
 {

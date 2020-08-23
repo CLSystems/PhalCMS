@@ -2,11 +2,11 @@
 
 namespace CLSystems\PhalCMS\Widget\LanguageSwitcher;
 
-use CLSystems\PhalCMS\Lib\Helper\Language;
-use CLSystems\PhalCMS\Lib\Helper\Uri;
-use CLSystems\PhalCMS\Lib\Helper\State;
-use CLSystems\PhalCMS\Lib\Widget;
-use CLSystems\PhalCMS\Lib\Mvc\Model\UcmItem;
+use CLSystems\PhalCMS\Library\Helper\Language;
+use CLSystems\PhalCMS\Library\Helper\Uri;
+use CLSystems\PhalCMS\Library\Helper\State;
+use CLSystems\PhalCMS\Library\Widget;
+use CLSystems\PhalCMS\Library\Mvc\Model\UcmItem;
 
 class LanguageSwitcher extends Widget
 {

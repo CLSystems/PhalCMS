@@ -1,6 +1,6 @@
 <?php
 
-namespace CLSystems\PhalCMS\Lib\Helper;
+namespace CLSystems\PhalCMS\Library\Helper;
 
 class IconSvg
 {

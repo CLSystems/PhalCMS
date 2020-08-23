@@ -1,8 +1,8 @@
 <?php
 
-namespace CLSystems\PhalCMS\Lib\Form\Field;
+namespace CLSystems\PhalCMS\Library\Form\Field;
 
-use CLSystems\PhalCMS\Lib\Helper\Language;
+use CLSystems\PhalCMS\Library\Helper\Language;
 
 class CmsLanguage extends Select
 {

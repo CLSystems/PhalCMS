@@ -1,8 +1,8 @@
 <?php
 
-namespace CLSystems\PhalCMS\Lib\Helper;
+namespace CLSystems\PhalCMS\Library\Helper;
 
-use CLSystems\PhalCMS\Lib\Mvc\Model\User as UserModel;
+use CLSystems\PhalCMS\Library\Mvc\Model\User as UserModel;
 use CLSystems\Php\Registry;
 use DateTimeZone, Exception;
 

@@ -1,13 +1,13 @@
 <?php
 
-namespace CLSystems\PhalCMS\Lib\Mvc\Controller;
+namespace CLSystems\PhalCMS\Library\Mvc\Controller;
 
 use Phalcon\Mvc\Model\Query\BuilderInterface;
-use CLSystems\PhalCMS\Lib\Helper\Uri;
-use CLSystems\PhalCMS\Lib\Helper\Event as EventHelper;
-use CLSystems\PhalCMS\Lib\Mvc\Model\UcmComment;
-use CLSystems\PhalCMS\Lib\Helper\Text;
-use CLSystems\PhalCMS\Lib\Form\FormsManager;
+use CLSystems\PhalCMS\Library\Helper\Uri;
+use CLSystems\PhalCMS\Library\Helper\Event as EventHelper;
+use CLSystems\PhalCMS\Library\Mvc\Model\UcmComment;
+use CLSystems\PhalCMS\Library\Helper\Text;
+use CLSystems\PhalCMS\Library\Form\FormsManager;
 
 class AdminUcmCommentController extends AdminControllerBase
 {

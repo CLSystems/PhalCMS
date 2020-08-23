@@ -1,10 +1,10 @@
 <?php
 
-namespace CLSystems\PhalCMS\Lib\Mvc\Controller;
+namespace CLSystems\PhalCMS\Library\Mvc\Controller;
 
 use Phalcon\Mvc\Model\Query\BuilderInterface;
-use CLSystems\PhalCMS\Lib\Form\FormsManager;
-use CLSystems\PhalCMS\Lib\Mvc\Model\UcmGroupField;
+use CLSystems\PhalCMS\Library\Form\FormsManager;
+use CLSystems\PhalCMS\Library\Mvc\Model\UcmGroupField;
 
 class AdminUcmGroupFieldController extends AdminControllerBase
 {

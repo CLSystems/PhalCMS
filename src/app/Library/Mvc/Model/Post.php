@@ -1,8 +1,8 @@
 <?php
 
-namespace CLSystems\PhalCMS\Lib\Mvc\Model;
+namespace CLSystems\PhalCMS\Library\Mvc\Model;
 
-use CLSystems\PhalCMS\Lib\Form\Form;
+use CLSystems\PhalCMS\Library\Form\Form;
 
 class Post extends UcmItem
 {

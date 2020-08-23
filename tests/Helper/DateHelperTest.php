@@ -1,8 +1,8 @@
 <?php
 
 use PHPUnit\Framework\TestCase;
-use CLSystems\PhalCMS\Lib\Helper\Date;
-use CLSystems\PhalCMS\Lib\Helper\User;
+use CLSystems\PhalCMS\Library\Helper\Date;
+use CLSystems\PhalCMS\Library\Helper\User;
 
 class DateHelperTest extends TestCase
 {

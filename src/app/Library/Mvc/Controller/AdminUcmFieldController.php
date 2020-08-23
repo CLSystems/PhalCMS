@@ -1,11 +1,11 @@
 <?php
 
-namespace CLSystems\PhalCMS\Lib\Mvc\Controller;
+namespace CLSystems\PhalCMS\Library\Mvc\Controller;
 
 use Phalcon\Mvc\Model\Query\BuilderInterface;
-use CLSystems\PhalCMS\Lib\Helper\Uri;
-use CLSystems\PhalCMS\Lib\Form\FormsManager;
-use CLSystems\PhalCMS\Lib\Mvc\Model\UcmField;
+use CLSystems\PhalCMS\Library\Helper\Uri;
+use CLSystems\PhalCMS\Library\Form\FormsManager;
+use CLSystems\PhalCMS\Library\Mvc\Model\UcmField;
 
 class AdminUcmFieldController extends AdminControllerBase
 {

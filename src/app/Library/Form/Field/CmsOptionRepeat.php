@@ -1,9 +1,9 @@
 <?php
 
-namespace CLSystems\PhalCMS\Lib\Form\Field;
+namespace CLSystems\PhalCMS\Library\Form\Field;
 
-use CLSystems\PhalCMS\Lib\Helper\Asset;
-use CLSystems\PhalCMS\Lib\Helper\Text as CmsText;
+use CLSystems\PhalCMS\Library\Helper\Asset;
+use CLSystems\PhalCMS\Library\Helper\Text as CmsText;
 use CLSystems\Php\Registry;
 
 class CmsOptionRepeat extends InputAbstract
@@ -42,7 +42,7 @@ class CmsOptionRepeat extends InputAbstract
 	            <li><a class="add" href="#" uk-icon="icon: plus"></a></li>
 	            <li><a class="remove" href="#" uk-icon="icon: trash"></a></li>
 	        </ul>
-	    </div>	    
+	    </div>
 	</div>
 	{$input}
 </div>

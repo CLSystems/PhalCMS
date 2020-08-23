@@ -2,10 +2,10 @@
 
 namespace CLSystems\PhalCMS\Plugin\System\Backup;
 
-use CLSystems\PhalCMS\Lib\Plugin;
-use CLSystems\PhalCMS\Lib\Helper\Uri;
-use CLSystems\PhalCMS\Lib\Helper\IconSvg;
-use CLSystems\PhalCMS\Lib\Helper\Text;
+use CLSystems\PhalCMS\Library\Plugin;
+use CLSystems\PhalCMS\Library\Helper\Uri;
+use CLSystems\PhalCMS\Library\Helper\IconSvg;
+use CLSystems\PhalCMS\Library\Helper\Text;
 
 class Backup extends Plugin
 {

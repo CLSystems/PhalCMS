@@ -1,9 +1,9 @@
 <?php
 
-namespace CLSystems\PhalCMS\Lib\Form\Field;
+namespace CLSystems\PhalCMS\Library\Form\Field;
 
-use CLSystems\PhalCMS\Lib\Mvc\Model\Translation;
-use CLSystems\PhalCMS\Lib\Form\Field;
+use CLSystems\PhalCMS\Library\Mvc\Model\Translation;
+use CLSystems\PhalCMS\Library\Form\Field;
 use CLSystems\Php\Registry;
 
 abstract class OptionAbstract extends Field

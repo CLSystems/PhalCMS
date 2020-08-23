@@ -1,6 +1,6 @@
 <?php
 
-namespace CLSystems\PhalCMS\Lib\Helper;
+namespace CLSystems\PhalCMS\Library\Helper;
 
 if (version_compare(PHP_VERSION, '5.6', '>='))
 {

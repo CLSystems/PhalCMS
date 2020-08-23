@@ -2,7 +2,7 @@
 
 namespace CLSystems\PhalCMS\Library;
 
-use CLSystems\PhalCMS\Lib\Factory;
+use CLSystems\PhalCMS\Library\Factory;
 use CLSystems\Php\Registry;
 
 class Plugin

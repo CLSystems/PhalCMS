@@ -1,7 +1,7 @@
 <?php
 
 use Phalcon\Mvc\Router;
-use CLSystems\PhalCMS\Lib\Helper\Uri;
+use CLSystems\PhalCMS\Library\Helper\Uri;
 
 $uriPrefix = Uri::getBaseUriPrefix();
 $client    = Uri::getActive()->getVar('client');

@@ -1,14 +1,14 @@
 <?php
 
-namespace CLSystems\PhalCMS\Lib\Mvc\Controller;
+namespace CLSystems\PhalCMS\Library\Mvc\Controller;
 
 use Phalcon\Mvc\Controller;
-use CLSystems\PhalCMS\Lib\Helper\Asset;
-use CLSystems\PhalCMS\Lib\Helper\Config;
-use CLSystems\PhalCMS\Lib\Helper\Event;
-use CLSystems\PhalCMS\Lib\Helper\Uri;
-use CLSystems\PhalCMS\Lib\Helper\Language;
-use CLSystems\PhalCMS\Lib\Helper\User;
+use CLSystems\PhalCMS\Library\Helper\Asset;
+use CLSystems\PhalCMS\Library\Helper\Config;
+use CLSystems\PhalCMS\Library\Helper\Event;
+use CLSystems\PhalCMS\Library\Helper\Uri;
+use CLSystems\PhalCMS\Library\Helper\Language;
+use CLSystems\PhalCMS\Library\Helper\User;
 use stdClass;
 
 class ControllerBase extends Controller

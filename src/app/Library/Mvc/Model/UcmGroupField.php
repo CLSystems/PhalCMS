@@ -1,6 +1,6 @@
 <?php
 
-namespace CLSystems\PhalCMS\Lib\Mvc\Model;
+namespace CLSystems\PhalCMS\Library\Mvc\Model;
 
 use Phalcon\Db\Adapter\Pdo\Mysql;
 

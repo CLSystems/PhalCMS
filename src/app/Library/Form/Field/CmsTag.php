@@ -1,8 +1,8 @@
 <?php
 
-namespace CLSystems\PhalCMS\Lib\Form\Field;
+namespace CLSystems\PhalCMS\Library\Form\Field;
 
-use CLSystems\PhalCMS\Lib\Mvc\Model\Tag;
+use CLSystems\PhalCMS\Library\Mvc\Model\Tag;
 
 class CmsTag extends Select
 {

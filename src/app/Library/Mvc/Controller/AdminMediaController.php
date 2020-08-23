@@ -1,16 +1,16 @@
 <?php
 
-namespace CLSystems\PhalCMS\Lib\Mvc\Controller;
+namespace CLSystems\PhalCMS\Library\Mvc\Controller;
 
-use CLSystems\PhalCMS\Lib\Helper\Asset;
-use CLSystems\PhalCMS\Lib\Helper\FileSystem;
+use CLSystems\PhalCMS\Library\Helper\Asset;
+use CLSystems\PhalCMS\Library\Helper\FileSystem;
 use Phalcon\Http\Request\File;
-use CLSystems\PhalCMS\Lib\Helper\Text;
-use CLSystems\PhalCMS\Lib\Helper\User;
-use CLSystems\PhalCMS\Lib\Helper\Form;
-use CLSystems\PhalCMS\Lib\Mvc\Model\Media;
-use CLSystems\PhalCMS\Lib\Helper\Date;
-use CLSystems\PhalCMS\Lib\Helper\Uri;
+use CLSystems\PhalCMS\Library\Helper\Text;
+use CLSystems\PhalCMS\Library\Helper\User;
+use CLSystems\PhalCMS\Library\Helper\Form;
+use CLSystems\PhalCMS\Library\Mvc\Model\Media;
+use CLSystems\PhalCMS\Library\Helper\Date;
+use CLSystems\PhalCMS\Library\Helper\Uri;
 
 class AdminMediaController extends AdminControllerBase
 {

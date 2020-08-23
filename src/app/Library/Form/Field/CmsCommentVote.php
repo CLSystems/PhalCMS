@@ -1,8 +1,8 @@
 <?php
 
-namespace CLSystems\PhalCMS\Lib\Form\Field;
+namespace CLSystems\PhalCMS\Library\Form\Field;
 
-use CLSystems\PhalCMS\Lib\Factory;
+use CLSystems\PhalCMS\Library\Factory;
 
 class CmsCommentVote extends Hidden
 {
@@ -14,18 +14,18 @@ class CmsCommentVote extends Hidden
     jQuery(document).ready(function ($) {
         var container = $('#{$id}-container');
         container.find('a').on('click', function (e) {
-            e.preventDefault();            
+            e.preventDefault();
             var a = $(this);
             var input = $('#{$id}');
             a.toggleClass('active');
             container.find('a').removeClass('uk-text-warning');
-            
+
             if (a.hasClass('active')) {
                 a.addClass('uk-text-warning').parent().prevAll().andSelf().find('a').addClass('uk-text-warning');
                 input.val(a.data('star'));
             } else {
                 input.val(0);
-            }          
+            }
         });
     });
 JAVASCRIPT

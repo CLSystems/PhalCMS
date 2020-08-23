@@ -1,9 +1,9 @@
 <?php
 
-namespace CLSystems\PhalCMS\Lib\Mvc\Controller;
+namespace CLSystems\PhalCMS\Library\Mvc\Controller;
 
-use CLSystems\PhalCMS\Lib\Helper\State;
-use CLSystems\PhalCMS\Lib\Helper\Text;
+use CLSystems\PhalCMS\Library\Helper\State;
+use CLSystems\PhalCMS\Library\Helper\Text;
 use Exception;
 
 class ErrorController extends ControllerBase

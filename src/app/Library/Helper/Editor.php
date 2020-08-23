@@ -1,8 +1,8 @@
 <?php
 
-namespace CLSystems\PhalCMS\Lib\Helper;
+namespace CLSystems\PhalCMS\Library\Helper;
 
-use CLSystems\PhalCMS\Lib\Factory;
+use CLSystems\PhalCMS\Library\Factory;
 
 class Editor
 {
@@ -35,40 +35,40 @@ cmsCore.initTinyMCE = function (element, editorHeight) {
 		plugins: [
 			'advlist autolink lists link charmap print preview anchor textcolor',
 	        'searchreplace visualblocks code fullscreen',
-	        'insertdatetime media table paste code wordcount'	
+	        'insertdatetime media table paste code wordcount'
 		],
 		toolbar: 'undo redo | formatselect | bold italic backcolor | alignleft aligncenter alignright alignjustify | bullist numlist outdent indent | link media | table | removeformat | preview | code | fullscreen | insertImage',
-		content_css: [		
+		content_css: [
 			'//cdnjs.cloudflare.com/ajax/libs/uikit/3.2.0/css/uikit.min.css',
 			'{$rootUri}/assets/css/tinymce.css',
 		],
 		setup: function (editor) {
 			editor.on('change', tinyMCE.triggerSave);
-        
+
 			if (!imageModal.length) {
 				imageModal = $('{$modalHtml}');
 				$(element).after(imageModal);
 			}
-			
+
 			editor.ui.registry.addButton('insertImage', {
 				text: '{$icon}',
-				onAction: function (_) {			
+				onAction: function (_) {
 					var frame = imageModal.find('iframe');
-					
+
 					if (!frame.hasClass('loaded')) {
 						frame.attr('src', frame.data('src')).addClass('loaded');
 						frame.on('load', function () {
 				            frame.contents().on('click', 'a.upload-file.image', function (e) {
-				                e.preventDefault();     
+				                e.preventDefault();
 				                var img = $(this).find('img').clone();
 				                img.removeAttr('class');
-				                img.removeAttr('title');	                
+				                img.removeAttr('title');
 				                editor.insertContent(img[0].outerHTML);
 				                UIkit.modal(imageModal[0]).hide();
 				            });
 			            });
 					}
-					
+
 					UIkit.modal(imageModal[0]).show();
 				}
 			});
@@ -78,11 +78,11 @@ cmsCore.initTinyMCE = function (element, editorHeight) {
 
 document.querySelectorAll('.js-editor-tinyMCE').forEach(function (element) {
 	var editorHeight = 550;
-	
+
 	if (element.hasAttribute('data-editor-height')) {
-		editorHeight = element.getAttribute('data-editor-height');		
+		editorHeight = element.getAttribute('data-editor-height');
 	}
-	
+
 	cmsCore.initTinyMCE(element, editorHeight);
 });
 
@@ -122,7 +122,7 @@ cmsCore.initCodeMirror = function (textAreaElement) {
             'CodeMirror-markergutter',
         ],
         foldGutter: true,
-        markerGutter: true,        
+        markerGutter: true,
         autoCloseTags: true,
         matchTags: true,
         autoCloseBrackets: true,
@@ -130,7 +130,7 @@ cmsCore.initCodeMirror = function (textAreaElement) {
         scrollbarStyle: 'native',
         vimMode: false,
         indentUnit: 4,
-        indentWithTabs: true,   
+        indentWithTabs: true,
         extraKeys: {
         F10: function(cm) {
             cm.setOption('fullScreen', !cm.getOption('fullScreen'));
@@ -140,11 +140,11 @@ cmsCore.initCodeMirror = function (textAreaElement) {
         }
       }
     });
-    
+
     editor.on('blur', function () {
         editor.save();
-    });    
-    
+    });
+
     $(textAreaElement).data('editor', editor);
 };
 

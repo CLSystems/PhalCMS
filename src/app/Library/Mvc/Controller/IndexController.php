@@ -1,9 +1,9 @@
 <?php
 
-namespace CLSystems\PhalCMS\Lib\Mvc\Controller;
+namespace CLSystems\PhalCMS\Library\Mvc\Controller;
 
 use Phalcon\Mvc\View;
-use CLSystems\PhalCMS\Lib\Helper\Config;
+use CLSystems\PhalCMS\Library\Helper\Config;
 use stdClass;
 
 class IndexController extends ControllerBase

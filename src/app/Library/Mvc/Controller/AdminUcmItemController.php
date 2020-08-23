@@ -1,25 +1,25 @@
 <?php
 
-namespace CLSystems\PhalCMS\Lib\Mvc\Controller;
+namespace CLSystems\PhalCMS\Library\Mvc\Controller;
 
 use Phalcon\Db\Adapter\Pdo\Mysql;
 use Phalcon\Mvc\Model\Query\BuilderInterface;
-use CLSystems\PhalCMS\Lib\Factory;
-use CLSystems\PhalCMS\Lib\Helper\Language;
-use CLSystems\PhalCMS\Lib\Helper\Asset;
-use CLSystems\PhalCMS\Lib\Helper\Uri;
-use CLSystems\PhalCMS\Lib\Helper\Event as EventHelper;
-use CLSystems\PhalCMS\Lib\Helper\UcmItem as UcmItemHelper;
-use CLSystems\PhalCMS\Lib\Helper\UcmField;
-use CLSystems\PhalCMS\Lib\Helper\Text;
-use CLSystems\PhalCMS\Lib\Helper\User;
-use CLSystems\PhalCMS\Lib\Helper\Form;
-use CLSystems\PhalCMS\Lib\Helper\Nested as NestedHelper;
-use CLSystems\PhalCMS\Lib\Mvc\Model\Nested;
-use CLSystems\PhalCMS\Lib\Mvc\Model\UcmItem;
-use CLSystems\PhalCMS\Lib\Form\Form as FormManager;
-use CLSystems\PhalCMS\Lib\Form\FormsManager;
-use CLSystems\PhalCMS\Lib\Form\Field;
+use CLSystems\PhalCMS\Library\Factory;
+use CLSystems\PhalCMS\Library\Helper\Language;
+use CLSystems\PhalCMS\Library\Helper\Asset;
+use CLSystems\PhalCMS\Library\Helper\Uri;
+use CLSystems\PhalCMS\Library\Helper\Event as EventHelper;
+use CLSystems\PhalCMS\Library\Helper\UcmItem as UcmItemHelper;
+use CLSystems\PhalCMS\Library\Helper\UcmField;
+use CLSystems\PhalCMS\Library\Helper\Text;
+use CLSystems\PhalCMS\Library\Helper\User;
+use CLSystems\PhalCMS\Library\Helper\Form;
+use CLSystems\PhalCMS\Library\Helper\Nested as NestedHelper;
+use CLSystems\PhalCMS\Library\Mvc\Model\Nested;
+use CLSystems\PhalCMS\Library\Mvc\Model\UcmItem;
+use CLSystems\PhalCMS\Library\Form\Form as FormManager;
+use CLSystems\PhalCMS\Library\Form\FormsManager;
+use CLSystems\PhalCMS\Library\Form\Field;
 use Exception;
 
 class AdminUcmItemController extends AdminControllerBase
@@ -349,7 +349,7 @@ class AdminUcmItemController extends AdminControllerBase
 
 		if ($insertTransValues)
 		{
-			$db->execute('INSERT INTO ' . $prefix . 'translations(translationId,originalValue,translatedValue) VALUES ' . implode(',', $insertTransValues), $insertTransBind);			
+			$db->execute('INSERT INTO ' . $prefix . 'translations(translationId,originalValue,translatedValue) VALUES ' . implode(',', $insertTransValues), $insertTransBind);
 		}
 	}
 
@@ -364,7 +364,7 @@ class AdminUcmItemController extends AdminControllerBase
 		 * @var Mysql       $db
 		 * @var FormManager $form
 		 * @var FormManager $formFields
-		 */		
+		 */
 
 		$formsFields = UcmField::buildUcmFormsFields($this->model->context, $validData['parentId']);
 		$formFields  = UcmField::buildUcmFormFields($this->model->context, $validData['parentId']);

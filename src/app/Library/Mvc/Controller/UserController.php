@@ -1,18 +1,18 @@
 <?php
 
-namespace CLSystems\PhalCMS\Lib\Mvc\Controller;
+namespace CLSystems\PhalCMS\Library\Mvc\Controller;
 
-use CLSystems\PhalCMS\Lib\Helper\Config;
-use CLSystems\PhalCMS\Lib\Helper\State;
-use CLSystems\PhalCMS\Lib\Helper\User;
-use CLSystems\PhalCMS\Lib\Helper\Date;
-use CLSystems\PhalCMS\Lib\Helper\Form;
-use CLSystems\PhalCMS\Lib\Helper\Uri;
-use CLSystems\PhalCMS\Lib\Helper\Text;
-use CLSystems\PhalCMS\Lib\Helper\Mail;
-use CLSystems\PhalCMS\Lib\Mvc\Model\User as UserModel;
+use CLSystems\PhalCMS\Library\Helper\Config;
+use CLSystems\PhalCMS\Library\Helper\State;
+use CLSystems\PhalCMS\Library\Helper\User;
+use CLSystems\PhalCMS\Library\Helper\Date;
+use CLSystems\PhalCMS\Library\Helper\Form;
+use CLSystems\PhalCMS\Library\Helper\Uri;
+use CLSystems\PhalCMS\Library\Helper\Text;
+use CLSystems\PhalCMS\Library\Helper\Mail;
+use CLSystems\PhalCMS\Library\Mvc\Model\User as UserModel;
 use Exception;
-use function CLSystems\PhalCMS\Lib\debugVar;
+use function CLSystems\PhalCMS\Library\debugVar;
 
 class UserController extends ControllerBase
 {

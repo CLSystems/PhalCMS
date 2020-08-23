@@ -1,13 +1,13 @@
 <?php
 
-namespace CLSystems\PhalCMS\Lib\Mvc\Controller;
+namespace CLSystems\PhalCMS\Library\Mvc\Controller;
 
-use CLSystems\PhalCMS\Lib\Helper\Date;
-use CLSystems\PhalCMS\Lib\Helper\User;
-use CLSystems\PhalCMS\Lib\Helper\Text;
-use CLSystems\PhalCMS\Lib\Helper\Comment;
-use CLSystems\PhalCMS\Lib\Mvc\Model\UcmComment;
-use CLSystems\PhalCMS\Lib\Mvc\Model\UcmItem;
+use CLSystems\PhalCMS\Library\Helper\Date;
+use CLSystems\PhalCMS\Library\Helper\User;
+use CLSystems\PhalCMS\Library\Helper\Text;
+use CLSystems\PhalCMS\Library\Helper\Comment;
+use CLSystems\PhalCMS\Library\Mvc\Model\UcmComment;
+use CLSystems\PhalCMS\Library\Mvc\Model\UcmItem;
 
 class CommentController extends ControllerBase
 {

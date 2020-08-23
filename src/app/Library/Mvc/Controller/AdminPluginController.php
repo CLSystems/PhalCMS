@@ -1,20 +1,20 @@
 <?php
 
-namespace CLSystems\PhalCMS\Lib\Mvc\Controller;
+namespace CLSystems\PhalCMS\Library\Mvc\Controller;
 
-use CLSystems\PhalCMS\Lib\Helper\FileSystem;
-use CLSystems\PhalCMS\Lib\Mvc\Model\Config;
-use CLSystems\PhalCMS\Lib\Helper\Event;
-use CLSystems\PhalCMS\Lib\Helper\Text;
-use CLSystems\PhalCMS\Lib\Helper\Uri;
-use CLSystems\PhalCMS\Lib\Helper\User;
-use CLSystems\PhalCMS\Lib\Helper\Config as CmsConfig;
-use CLSystems\PhalCMS\Lib\Helper\Form as FormHelper;
-use CLSystems\PhalCMS\Lib\Helper\Toolbar;
-use CLSystems\PhalCMS\Lib\Plugin;
-use CLSystems\PhalCMS\Lib\Form\Form;
+use CLSystems\PhalCMS\Library\Helper\FileSystem;
+use CLSystems\PhalCMS\Library\Mvc\Model\Config;
+use CLSystems\PhalCMS\Library\Helper\Event;
+use CLSystems\PhalCMS\Library\Helper\Text;
+use CLSystems\PhalCMS\Library\Helper\Uri;
+use CLSystems\PhalCMS\Library\Helper\User;
+use CLSystems\PhalCMS\Library\Helper\Config as CmsConfig;
+use CLSystems\PhalCMS\Library\Helper\Form as FormHelper;
+use CLSystems\PhalCMS\Library\Helper\Toolbar;
+use CLSystems\PhalCMS\Library\Plugin;
+use CLSystems\PhalCMS\Library\Form\Form;
 use CLSystems\Php\Registry;
-use function CLSystems\PhalCMS\Lib\debugVar;
+use function CLSystems\PhalCMS\Library\debugVar;
 
 class AdminPluginController extends AdminControllerBase
 {

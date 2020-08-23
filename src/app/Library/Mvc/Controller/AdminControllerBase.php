@@ -1,25 +1,25 @@
 <?php
 
-namespace CLSystems\PhalCMS\Lib\Mvc\Controller;
+namespace CLSystems\PhalCMS\Library\Mvc\Controller;
 
 use Phalcon\Mvc\Model;
 use Phalcon\Db\Adapter\Pdo\Mysql;
 use Phalcon\Mvc\Model\Query\BuilderInterface;
 use Phalcon\Paginator\Adapter\QueryBuilder as Paginator;
-use CLSystems\PhalCMS\Lib\Helper\User;
-use CLSystems\PhalCMS\Lib\Helper\Text;
-use CLSystems\PhalCMS\Lib\Helper\Toolbar;
-use CLSystems\PhalCMS\Lib\Helper\Uri;
-use CLSystems\PhalCMS\Lib\Helper\Config;
-use CLSystems\PhalCMS\Lib\Helper\Form as FormHelper;
-use CLSystems\PhalCMS\Lib\Helper\Date;
-use CLSystems\PhalCMS\Lib\Helper\Language;
-use CLSystems\PhalCMS\Lib\Mvc\Model\ModelBase;
-use CLSystems\PhalCMS\Lib\Mvc\Model\Nested;
-use CLSystems\PhalCMS\Lib\Mvc\Model\User as UserModel;
-use CLSystems\PhalCMS\Lib\Form\FormsManager;
-use CLSystems\PhalCMS\Lib\Form\Form;
-use CLSystems\PhalCMS\Lib\Form\Field;
+use CLSystems\PhalCMS\Library\Helper\User;
+use CLSystems\PhalCMS\Library\Helper\Text;
+use CLSystems\PhalCMS\Library\Helper\Toolbar;
+use CLSystems\PhalCMS\Library\Helper\Uri;
+use CLSystems\PhalCMS\Library\Helper\Config;
+use CLSystems\PhalCMS\Library\Helper\Form as FormHelper;
+use CLSystems\PhalCMS\Library\Helper\Date;
+use CLSystems\PhalCMS\Library\Helper\Language;
+use CLSystems\PhalCMS\Library\Mvc\Model\ModelBase;
+use CLSystems\PhalCMS\Library\Mvc\Model\Nested;
+use CLSystems\PhalCMS\Library\Mvc\Model\User as UserModel;
+use CLSystems\PhalCMS\Library\Form\FormsManager;
+use CLSystems\PhalCMS\Library\Form\Form;
+use CLSystems\PhalCMS\Library\Form\Field;
 use CLSystems\Php\Registry;
 use CLSystems\Php\Filter;
 use Exception;

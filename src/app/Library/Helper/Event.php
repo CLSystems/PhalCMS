@@ -1,8 +1,8 @@
 <?php
 
-namespace CLSystems\PhalCMS\Lib\Helper;
+namespace CLSystems\PhalCMS\Library\Helper;
 
-use CLSystems\PhalCMS\Lib\Mvc\Model\Config as ConfigModel;
+use CLSystems\PhalCMS\Library\Mvc\Model\Config as ConfigModel;
 use CLSystems\Php\Registry;
 
 class Event

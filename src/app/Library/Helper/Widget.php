@@ -1,13 +1,13 @@
 <?php
 
-namespace CLSystems\PhalCMS\Lib\Helper;
+namespace CLSystems\PhalCMS\Library\Helper;
 
 use Phalcon\Loader;
-use CLSystems\PhalCMS\Lib\Mvc\Model\Translation;
-use CLSystems\PhalCMS\Lib\Widget as CmsWidget;
-use CLSystems\PhalCMS\Lib\Mvc\Model\Config as ConfigModel;
-use CLSystems\PhalCMS\Lib\Form\Form;
-use CLSystems\PhalCMS\Lib\Form\Field;
+use CLSystems\PhalCMS\Library\Mvc\Model\Translation;
+use CLSystems\PhalCMS\Library\Widget as CmsWidget;
+use CLSystems\PhalCMS\Library\Mvc\Model\Config as ConfigModel;
+use CLSystems\PhalCMS\Library\Form\Form;
+use CLSystems\PhalCMS\Library\Form\Field;
 use CLSystems\Php\Registry;
 
 class Widget

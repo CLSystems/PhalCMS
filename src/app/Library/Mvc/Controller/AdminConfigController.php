@@ -1,14 +1,14 @@
 <?php
 
-namespace CLSystems\PhalCMS\Lib\Mvc\Controller;
+namespace CLSystems\PhalCMS\Library\Mvc\Controller;
 
 use PHPMailer\PHPMailer\Exception as PHPMailerException;
-use CLSystems\PhalCMS\Lib\Helper\Asset;
-use CLSystems\PhalCMS\Lib\Helper\Text;
-use CLSystems\PhalCMS\Lib\Helper\Toolbar;
-use CLSystems\PhalCMS\Lib\Helper\Mail as MailHelper;
-use CLSystems\PhalCMS\Lib\Helper\Config as CMSConfig;
-use CLSystems\PhalCMS\Lib\Mvc\Model\Config as ConfigModel;
+use CLSystems\PhalCMS\Library\Helper\Asset;
+use CLSystems\PhalCMS\Library\Helper\Text;
+use CLSystems\PhalCMS\Library\Helper\Toolbar;
+use CLSystems\PhalCMS\Library\Helper\Mail as MailHelper;
+use CLSystems\PhalCMS\Library\Helper\Config as CMSConfig;
+use CLSystems\PhalCMS\Library\Mvc\Model\Config as ConfigModel;
 
 class AdminConfigController extends AdminControllerBase
 {

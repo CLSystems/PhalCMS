@@ -1,12 +1,12 @@
 <?php
 
-namespace CLSystems\PhalCMS\Lib\Mvc\View;
+namespace CLSystems\PhalCMS\Library\Mvc\View;
 
 use Phalcon\Di;
 use Phalcon\Mvc\View;
 use Phalcon\Mvc\View\Engine\Volt;
-use CLSystems\PhalCMS\Lib\Helper\Volt as VoltHelper;
-use CLSystems\PhalCMS\Lib\Factory;
+use CLSystems\PhalCMS\Library\Helper\Volt as VoltHelper;
+use CLSystems\PhalCMS\Library\Factory;
 
 class ViewBase extends View
 {
