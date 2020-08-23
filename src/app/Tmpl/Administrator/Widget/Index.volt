@@ -1,6 +1,7 @@
 <div id="widget-container" data-ajax="{{ ajaxData | json_encode | escape_attr }}">
     <div class="uk-grid-small uk-child-width-1-2@s" uk-grid>
         <div class="widgets-list uk-width-1-3@m">
+            <h4>Widgets</h4>
             <div uk-margin>
                 {% for widgetClass, widgetConfig in widgets %}
                     {% set widgetName = widgetConfig.get('manifest.name') %}
@@ -41,6 +42,7 @@
             </div>
         </div>
         <div class="positions-list uk-width-2-3@m">
+            <h4>Positions</h4>
             <div class="uk-grid-small uk-child-width-1-2@s" uk-grid>
                 {% for position in positions %}
                     <div>

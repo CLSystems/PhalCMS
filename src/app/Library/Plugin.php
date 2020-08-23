@@ -7,45 +7,44 @@ use CLSystems\Php\Registry;
 
 class Plugin
 {
-	/** @var Registry */
-	protected $config;
+    /** @var Registry */
+    protected $config;
 
-	/** @var Registry */
-	protected $params;
+    /** @var Registry */
+    protected $params;
 
-	final public function __construct(Registry $config)
-	{
-		$this->config = $config;
-		$this->onConstruct();
-	}
+    final public function __construct(Registry $config)
+    {
+        $this->config = $config;
+        $this->onConstruct();
+    }
 
-	public function onConstruct()
-	{
+    public function onConstruct()
+    {
+    }
 
-	}
+    public function getConfig()
+    {
+        return $this->config;
+    }
 
-	public function getConfig()
-	{
-		return $this->config;
-	}
+    public function getRenderer()
+    {
+        return Factory::getService('view');
+    }
 
-	public function getRenderer()
-	{
-		return Factory::getService('view');
-	}
+    public function activate()
+    {
+        // Todo something before activate
+    }
 
-	public function activate()
-	{
-		// Todo something before activate
-	}
+    public function deactivate()
+    {
+        // Todo something before deactivate
+    }
 
-	public function deactivate()
-	{
-		// Todo something before deactivate
-	}
-
-	public function uninstall()
-	{
-		// Todo something before uninstall
-	}
+    public function uninstall()
+    {
+        // Todo something before uninstall
+    }
 }

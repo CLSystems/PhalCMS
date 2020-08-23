@@ -1,6 +1,6 @@
 {% set params = [
     'displayLayout': 'BlogList',
-    'categoryIds': [postCategory.id | intval],
+    'categoryIds': [productCategory.id | intval],
     'orderBy': 'latest',
     'postsNum': 5
 ] %}
@@ -10,9 +10,9 @@
         <div class="uk-text-center">
             {{ partial('Breadcrumb/Breadcrumb') }}
             <h1 class="uk-margin-small-top uk-margin-remove-bottom">
-                {{ postCategory.t('title') }}
+                {{ productCategory.t('title') }}
             </h1>
         </div>
-        {{ helper('Widget::createWidget', 'PostNews', params, true, 'Raw') }}
+        {{ helper('Widget::createWidget', 'ProductNews', params, true, 'Raw') }}
     </div>
 </section>

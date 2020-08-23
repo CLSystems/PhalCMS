@@ -47,8 +47,7 @@ class Factory
                 }
 
                 header('location: ' . $protocol . '://' . $_SERVER['HTTP_HOST'] . '/install.php');
-            }
-            else {
+            } else {
                 die('The config INI file not exists.');
             }
         }
@@ -77,9 +76,8 @@ class Factory
                     ]
                 );
 
-            }
-            catch (Exception $e) {
-                die ($e->getMessage());
+            } catch (Exception $e) {
+                die($e->getMessage());
             }
 
             $registry = new Registry(
@@ -92,7 +90,7 @@ class Factory
                         'widgets' => [
                             'CLSystems\\PhalCMS\\Widget\\Code\\Code',
                             'CLSystems\\PhalCMS\\Widget\\Content\\Content',
-                            'CLSystems\\PhalCMS\\Widget\\FlashNews\\FlashNews',
+                            'CLSystems\\PhalCMS\\Widget\\FlashNews\\ProductNews',
                             'CLSystems\\PhalCMS\\Widget\\LanguageSwitcher\\LanguageSwitcher',
                             'CLSystems\\PhalCMS\\Widget\\Login\\Login',
                             'CLSystems\\PhalCMS\\Widget\\Menu\\Menu',
@@ -138,7 +136,7 @@ class Factory
                     ]
                 );
 
-            $di->setShared('session', function() {
+            $di->setShared('session', function () {
                 $session = new Manager;
                 $session->setAdapter(new Stream);
                 $session->start();
@@ -146,11 +144,11 @@ class Factory
                 return $session;
             });
 
-            $di->setShared('sessionBag', function() {
+            $di->setShared('sessionBag', function () {
                 return new Bag('controller.persistent');
             });
 
-            $di->setShared('router', function() {
+            $di->setShared('router', function () {
                 $router = include CONFIG_PATH . '/Router.php';
                 Event::trigger('onBeforeServiceSetRouter', [$router], ['System', 'Cms']);
 
@@ -202,7 +200,6 @@ class Factory
             case 'crypt':
             case 'request':
             case 'response':
-
                 return $di->getShared($name, $parameters);
         }
 

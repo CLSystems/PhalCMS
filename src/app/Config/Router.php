@@ -9,7 +9,7 @@ $client    = Uri::getActive()->getVar('client');
 // Create the router
 $router = new Router(false);
 $router->removeExtraSlashes(true);
-$router->setDefaultNamespace('CLSystems\\PhalCMS\\Lib\\Mvc\\Controller');
+$router->setDefaultNamespace('CLSystems\\PhalCMS\\Library\\Mvc\\Controller');
 
 if (Uri::isHome())
 {

@@ -31,7 +31,7 @@ class ModelBase extends Model
 
 	public function getIgnorePrefixModelName()
 	{
-		return str_replace('CLSystems\\PhalCMS\\Lib\\Mvc\\Model\\', '', get_class($this));
+		return str_replace('CLSystems\\PhalCMS\\Library\\Mvc\\Model\\', '', get_class($this));
 	}
 
 	public function getOrderFields()
