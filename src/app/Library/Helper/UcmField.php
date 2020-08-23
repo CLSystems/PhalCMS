@@ -1,11 +1,11 @@
 <?php
 
-namespace CLSystems\PhalCMS\Lib\Helper;
+namespace CLSystems\PhalCMS\Library\Helper;
 
-use CLSystems\PhalCMS\Lib\Mvc\Model\UcmGroupField;
-use CLSystems\PhalCMS\Lib\Mvc\Model\UcmField as FieldModel;
-use CLSystems\PhalCMS\Lib\Form\FormsManager;
-use CLSystems\PhalCMS\Lib\Form\Form;
+use CLSystems\PhalCMS\Library\Mvc\Model\UcmGroupField;
+use CLSystems\PhalCMS\Library\Mvc\Model\UcmField as FieldModel;
+use CLSystems\PhalCMS\Library\Form\FormsManager;
+use CLSystems\PhalCMS\Library\Form\Form;
 
 class UcmField
 {

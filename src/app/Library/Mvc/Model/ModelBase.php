@@ -1,15 +1,15 @@
 <?php
 
-namespace CLSystems\PhalCMS\Lib\Mvc\Model;
+namespace CLSystems\PhalCMS\Library\Mvc\Model;
 
 use CLSystems\Php\Registry;
 use Phalcon\Mvc\Model;
-use CLSystems\PhalCMS\Lib\Helper\StringHelper;
-use CLSystems\PhalCMS\Lib\Helper\Date;
-use CLSystems\PhalCMS\Lib\Helper\User;
-use CLSystems\PhalCMS\Lib\Helper\Language;
-use CLSystems\PhalCMS\Lib\Form\Form;
-use CLSystems\PhalCMS\Lib\Form\FormsManager;
+use CLSystems\PhalCMS\Library\Helper\StringHelper;
+use CLSystems\PhalCMS\Library\Helper\Date;
+use CLSystems\PhalCMS\Library\Helper\User;
+use CLSystems\PhalCMS\Library\Helper\Language;
+use CLSystems\PhalCMS\Library\Form\Form;
+use CLSystems\PhalCMS\Library\Form\FormsManager;
 
 class ModelBase extends Model
 {

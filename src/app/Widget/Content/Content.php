@@ -2,9 +2,9 @@
 
 namespace CLSystems\PhalCMS\Widget\Content;
 
-use CLSystems\PhalCMS\Lib\Widget;
+use CLSystems\PhalCMS\Library\Widget;
 
 class Content extends Widget
 {
-	
+
 }

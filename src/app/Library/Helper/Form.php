@@ -1,10 +1,10 @@
 <?php
 
-namespace CLSystems\PhalCMS\Lib\Helper;
+namespace CLSystems\PhalCMS\Library\Helper;
 
 use Phalcon\Http\Request;
 use Phalcon\Session\Manager as SessionAdapter;
-use CLSystems\PhalCMS\Lib\Factory;
+use CLSystems\PhalCMS\Library\Factory;
 
 class Form
 {

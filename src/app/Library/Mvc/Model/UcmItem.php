@@ -1,16 +1,16 @@
 <?php
 
-namespace CLSystems\PhalCMS\Lib\Mvc\Model;
+namespace CLSystems\PhalCMS\Library\Mvc\Model;
 
 use Phalcon\Db\Adapter\Pdo\Mysql;
-use CLSystems\PhalCMS\Lib\Helper\Event as EventHelper;
-use CLSystems\PhalCMS\Lib\Helper\UcmItem as UcmItemHelper;
-use CLSystems\PhalCMS\Lib\Helper\StringHelper;
-use CLSystems\PhalCMS\Lib\Helper\Uri;
-use CLSystems\PhalCMS\Lib\Helper\Language;
-use CLSystems\PhalCMS\Lib\Form\FormsManager;
-use CLSystems\PhalCMS\Lib\Form\Form;
-use CLSystems\PhalCMS\Lib\Factory;
+use CLSystems\PhalCMS\Library\Helper\Event as EventHelper;
+use CLSystems\PhalCMS\Library\Helper\UcmItem as UcmItemHelper;
+use CLSystems\PhalCMS\Library\Helper\StringHelper;
+use CLSystems\PhalCMS\Library\Helper\Uri;
+use CLSystems\PhalCMS\Library\Helper\Language;
+use CLSystems\PhalCMS\Library\Form\FormsManager;
+use CLSystems\PhalCMS\Library\Form\Form;
+use CLSystems\PhalCMS\Library\Factory;
 use CLSystems\Php\Registry;
 use CLSystems\Php\Filter;
 

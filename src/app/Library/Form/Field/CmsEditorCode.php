@@ -1,9 +1,9 @@
 <?php
 
-namespace CLSystems\PhalCMS\Lib\Form\Field;
+namespace CLSystems\PhalCMS\Library\Form\Field;
 
-use CLSystems\PhalCMS\Lib\Helper\Editor;
-use CLSystems\PhalCMS\Lib\Helper\Text;
+use CLSystems\PhalCMS\Library\Helper\Editor;
+use CLSystems\PhalCMS\Library\Helper\Text;
 
 class CmsEditorCode extends TextArea
 {

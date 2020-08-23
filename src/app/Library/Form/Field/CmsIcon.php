@@ -1,11 +1,11 @@
 <?php
 
-namespace CLSystems\PhalCMS\Lib\Form\Field;
+namespace CLSystems\PhalCMS\Library\Form\Field;
 
-use CLSystems\PhalCMS\Lib\Helper\Asset;
-use CLSystems\PhalCMS\Lib\Helper\IconSvg;
-use CLSystems\PhalCMS\Lib\Form\Field;
-use CLSystems\PhalCMS\Lib\Helper\Text;
+use CLSystems\PhalCMS\Library\Helper\Asset;
+use CLSystems\PhalCMS\Library\Helper\IconSvg;
+use CLSystems\PhalCMS\Library\Form\Field;
+use CLSystems\PhalCMS\Library\Helper\Text;
 
 class CmsIcon extends Field
 {

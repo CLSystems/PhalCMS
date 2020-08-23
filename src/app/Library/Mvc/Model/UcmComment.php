@@ -1,11 +1,11 @@
 <?php
 
-namespace CLSystems\PhalCMS\Lib\Mvc\Model;
+namespace CLSystems\PhalCMS\Library\Mvc\Model;
 
 use Phalcon\Http\Request;
-use CLSystems\PhalCMS\Lib\Helper\User as UserHelper;
-use CLSystems\PhalCMS\Lib\Helper\Uri;
-use CLSystems\PhalCMS\Lib\Factory;
+use CLSystems\PhalCMS\Library\Helper\User as UserHelper;
+use CLSystems\PhalCMS\Library\Helper\Uri;
+use CLSystems\PhalCMS\Library\Factory;
 
 class UcmComment extends ModelBase
 {

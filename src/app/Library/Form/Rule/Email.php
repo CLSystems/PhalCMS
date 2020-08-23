@@ -1,8 +1,8 @@
 <?php
 
-namespace CLSystems\PhalCMS\Lib\Form\Rule;
+namespace CLSystems\PhalCMS\Library\Form\Rule;
 
-use CLSystems\PhalCMS\Lib\Form\Field;
+use CLSystems\PhalCMS\Library\Form\Field;
 
 class Email implements Rule
 {

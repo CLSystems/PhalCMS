@@ -2,7 +2,7 @@
 
 namespace CLSystems\PhalCMS\Library;
 
-use CLSystems\PhalCMS\Lib\Mvc\View\ViewBase;
+use CLSystems\PhalCMS\Library\Mvc\View\ViewBase;
 use CLSystems\Php\Registry;
 use ReflectionClass;
 

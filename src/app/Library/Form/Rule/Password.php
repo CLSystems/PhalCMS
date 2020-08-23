@@ -1,9 +1,9 @@
 <?php
 
-namespace CLSystems\PhalCMS\Lib\Form\Rule;
+namespace CLSystems\PhalCMS\Library\Form\Rule;
 
-use CLSystems\PhalCMS\Lib\Form\Field;
-use CLSystems\PhalCMS\Lib\Helper\User;
+use CLSystems\PhalCMS\Library\Form\Field;
+use CLSystems\PhalCMS\Library\Helper\User;
 
 class Password implements Rule
 {

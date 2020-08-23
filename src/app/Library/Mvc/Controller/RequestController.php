@@ -1,8 +1,8 @@
 <?php
 
-namespace CLSystems\PhalCMS\Lib\Mvc\Controller;
+namespace CLSystems\PhalCMS\Library\Mvc\Controller;
 
-use CLSystems\PhalCMS\Lib\Helper\Event;
+use CLSystems\PhalCMS\Library\Helper\Event;
 use Exception;
 
 class RequestController extends ControllerBase

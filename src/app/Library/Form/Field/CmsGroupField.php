@@ -1,9 +1,9 @@
 <?php
 
-namespace CLSystems\PhalCMS\Lib\Form\Field;
+namespace CLSystems\PhalCMS\Library\Form\Field;
 
-use CLSystems\PhalCMS\Lib\Mvc\Model\UcmGroupField;
-use CLSystems\PhalCMS\Lib\Factory;
+use CLSystems\PhalCMS\Library\Mvc\Model\UcmGroupField;
+use CLSystems\PhalCMS\Library\Factory;
 
 class CmsGroupField extends Select
 {

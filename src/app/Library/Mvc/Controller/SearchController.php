@@ -1,15 +1,15 @@
 <?php
 
-namespace CLSystems\PhalCMS\Lib\Mvc\Controller;
+namespace CLSystems\PhalCMS\Library\Mvc\Controller;
 
 use Phalcon\Paginator\Adapter\QueryBuilder as Paginator;
-use CLSystems\PhalCMS\Lib\Mvc\Model\UcmItem as Item;
-use CLSystems\PhalCMS\Lib\Mvc\Model\UcmItemMap;
-use CLSystems\PhalCMS\Lib\Mvc\Model\Translation;
-use CLSystems\PhalCMS\Lib\Mvc\Model\Tag;
-use CLSystems\PhalCMS\Lib\Helper\Config;
-use CLSystems\PhalCMS\Lib\Helper\Event;
-use CLSystems\PhalCMS\Lib\Helper\Language;
+use CLSystems\PhalCMS\Library\Mvc\Model\UcmItem as Item;
+use CLSystems\PhalCMS\Library\Mvc\Model\UcmItemMap;
+use CLSystems\PhalCMS\Library\Mvc\Model\Translation;
+use CLSystems\PhalCMS\Library\Mvc\Model\Tag;
+use CLSystems\PhalCMS\Library\Helper\Config;
+use CLSystems\PhalCMS\Library\Helper\Event;
+use CLSystems\PhalCMS\Library\Helper\Language;
 
 class SearchController extends ControllerBase
 {

@@ -4,15 +4,15 @@ namespace CLSystems\PhalCMS\Plugin\System\Cms;
 
 use Phalcon\Events\Event;
 use Phalcon\Mvc\Dispatcher;
-use CLSystems\PhalCMS\Lib\Helper\Uri;
-use CLSystems\PhalCMS\Lib\Helper\Language;
-use CLSystems\PhalCMS\Lib\Helper\Text;
-use CLSystems\PhalCMS\Lib\Helper\Menu;
-use CLSystems\PhalCMS\Lib\Helper\User;
-use CLSystems\PhalCMS\Lib\Plugin as CmsPlugin;
-use CLSystems\PhalCMS\Lib\Mvc\Model\Post;
-use CLSystems\PhalCMS\Lib\Mvc\Model\PostCategory;
-use CLSystems\PhalCMS\Lib\Factory;
+use CLSystems\PhalCMS\Library\Helper\Uri;
+use CLSystems\PhalCMS\Library\Helper\Language;
+use CLSystems\PhalCMS\Library\Helper\Text;
+use CLSystems\PhalCMS\Library\Helper\Menu;
+use CLSystems\PhalCMS\Library\Helper\User;
+use CLSystems\PhalCMS\Library\Plugin as CmsPlugin;
+use CLSystems\PhalCMS\Library\Mvc\Model\Post;
+use CLSystems\PhalCMS\Library\Mvc\Model\PostCategory;
+use CLSystems\PhalCMS\Library\Factory;
 
 class Cms extends CmsPlugin
 {

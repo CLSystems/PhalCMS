@@ -1,19 +1,19 @@
 <?php
 
-namespace CLSystems\PhalCMS\Lib\Mvc\Controller;
+namespace CLSystems\PhalCMS\Library\Mvc\Controller;
 
 use Phalcon\Db\Adapter\Pdo\Mysql;
-use CLSystems\PhalCMS\Lib\Mvc\Model\Config;
-use CLSystems\PhalCMS\Lib\Helper\Language;
-use CLSystems\PhalCMS\Lib\Helper\Widget as WidgetHelper;
-use CLSystems\PhalCMS\Lib\Helper\Form as FormHelper;
-use CLSystems\PhalCMS\Lib\Helper\Config as CmsConfig;
-use CLSystems\PhalCMS\Lib\Helper\User;
-use CLSystems\PhalCMS\Lib\Helper\Asset;
-use CLSystems\PhalCMS\Lib\Helper\Text;
-use CLSystems\PhalCMS\Lib\Helper\Editor;
-use CLSystems\PhalCMS\Lib\Helper\Uri;
-use CLSystems\PhalCMS\Lib\Form\Form;
+use CLSystems\PhalCMS\Library\Mvc\Model\Config;
+use CLSystems\PhalCMS\Library\Helper\Language;
+use CLSystems\PhalCMS\Library\Helper\Widget as WidgetHelper;
+use CLSystems\PhalCMS\Library\Helper\Form as FormHelper;
+use CLSystems\PhalCMS\Library\Helper\Config as CmsConfig;
+use CLSystems\PhalCMS\Library\Helper\User;
+use CLSystems\PhalCMS\Library\Helper\Asset;
+use CLSystems\PhalCMS\Library\Helper\Text;
+use CLSystems\PhalCMS\Library\Helper\Editor;
+use CLSystems\PhalCMS\Library\Helper\Uri;
+use CLSystems\PhalCMS\Library\Form\Form;
 use CLSystems\Php\Filter;
 use CLSystems\Php\Registry;
 

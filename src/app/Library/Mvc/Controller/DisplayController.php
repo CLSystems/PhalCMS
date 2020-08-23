@@ -1,18 +1,18 @@
 <?php
 
-namespace CLSystems\PhalCMS\Lib\Mvc\Controller;
+namespace CLSystems\PhalCMS\Library\Mvc\Controller;
 
-use CLSystems\PhalCMS\Lib\Helper\Config;
-use CLSystems\PhalCMS\Lib\Helper\Event;
-use CLSystems\PhalCMS\Lib\Helper\StringHelper;
-use CLSystems\PhalCMS\Lib\Helper\Text;
-use CLSystems\PhalCMS\Lib\Helper\Uri;
-use CLSystems\PhalCMS\Lib\Helper\State;
-use CLSystems\PhalCMS\Lib\Helper\Language;
-use CLSystems\PhalCMS\Lib\Helper\UcmItem as UcmItemHelper;
-use CLSystems\PhalCMS\Lib\Mvc\Model\UcmItem as UcmItemModel;
-use CLSystems\PhalCMS\Lib\Mvc\Model\Nested;
-use CLSystems\PhalCMS\Lib\Mvc\Model\Translation;
+use CLSystems\PhalCMS\Library\Helper\Config;
+use CLSystems\PhalCMS\Library\Helper\Event;
+use CLSystems\PhalCMS\Library\Helper\StringHelper;
+use CLSystems\PhalCMS\Library\Helper\Text;
+use CLSystems\PhalCMS\Library\Helper\Uri;
+use CLSystems\PhalCMS\Library\Helper\State;
+use CLSystems\PhalCMS\Library\Helper\Language;
+use CLSystems\PhalCMS\Library\Helper\UcmItem as UcmItemHelper;
+use CLSystems\PhalCMS\Library\Mvc\Model\UcmItem as UcmItemModel;
+use CLSystems\PhalCMS\Library\Mvc\Model\Nested;
+use CLSystems\PhalCMS\Library\Mvc\Model\Translation;
 use stdClass;
 
 class DisplayController extends ControllerBase
@@ -33,7 +33,7 @@ class DisplayController extends ControllerBase
 	{
 		/** @var UcmItemModel $ucmItem */
 		$params = $this->dispatcher->getParams();
-		
+
 		if (isset($params[0]) && strpos($params[0], '?') !== 0)
 		{
 			return $this->notFound();

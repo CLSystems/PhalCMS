@@ -1,18 +1,18 @@
 <?php
 
-namespace CLSystems\PhalCMS\Lib\Mvc\Controller;
+namespace CLSystems\PhalCMS\Library\Mvc\Controller;
 
 use Phalcon\Db\Adapter\Pdo\Mysql;
-use CLSystems\PhalCMS\Lib\Helper\Asset;
-use CLSystems\PhalCMS\Lib\Helper\Language;
-use CLSystems\PhalCMS\Lib\Helper\Menu;
-use CLSystems\PhalCMS\Lib\Helper\User;
-use CLSystems\PhalCMS\Lib\Helper\Form as FormHelper;
-use CLSystems\PhalCMS\Lib\Mvc\Model\Config as ConfigModel;
-use CLSystems\PhalCMS\Lib\Mvc\Model\Translation;
-use CLSystems\PhalCMS\Lib\Helper\Text;
-use CLSystems\PhalCMS\Lib\Form\Form;
-use CLSystems\PhalCMS\Lib\Form\Field\CmsIcon;
+use CLSystems\PhalCMS\Library\Helper\Asset;
+use CLSystems\PhalCMS\Library\Helper\Language;
+use CLSystems\PhalCMS\Library\Helper\Menu;
+use CLSystems\PhalCMS\Library\Helper\User;
+use CLSystems\PhalCMS\Library\Helper\Form as FormHelper;
+use CLSystems\PhalCMS\Library\Mvc\Model\Config as ConfigModel;
+use CLSystems\PhalCMS\Library\Mvc\Model\Translation;
+use CLSystems\PhalCMS\Library\Helper\Text;
+use CLSystems\PhalCMS\Library\Form\Form;
+use CLSystems\PhalCMS\Library\Form\Field\CmsIcon;
 use CLSystems\Php\Registry;
 use CLSystems\Php\Filter;
 

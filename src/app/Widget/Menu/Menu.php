@@ -2,8 +2,8 @@
 
 namespace CLSystems\PhalCMS\Widget\Menu;
 
-use CLSystems\PhalCMS\Lib\Helper\Menu as MenuHelper;
-use CLSystems\PhalCMS\Lib\Widget;
+use CLSystems\PhalCMS\Library\Helper\Menu as MenuHelper;
+use CLSystems\PhalCMS\Library\Widget;
 
 class Menu extends Widget
 {

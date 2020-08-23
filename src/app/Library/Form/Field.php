@@ -1,13 +1,13 @@
 <?php
 
-namespace CLSystems\PhalCMS\Lib\Form;
+namespace CLSystems\PhalCMS\Library\Form;
 
 use CLSystems\Php\Filter;
-use CLSystems\PhalCMS\Lib\Factory;
-use CLSystems\PhalCMS\Lib\Form\Rule\Rule;
-use CLSystems\PhalCMS\Lib\Helper\Asset;
-use CLSystems\PhalCMS\Lib\Helper\Language;
-use CLSystems\PhalCMS\Lib\Helper\Text as CmsText;
+use CLSystems\PhalCMS\Library\Factory;
+use CLSystems\PhalCMS\Library\Form\Rule\Rule;
+use CLSystems\PhalCMS\Library\Helper\Asset;
+use CLSystems\PhalCMS\Library\Helper\Language;
+use CLSystems\PhalCMS\Library\Helper\Text as CmsText;
 use CLSystems\Php\Registry;
 
 abstract class Field

@@ -1,6 +1,6 @@
 <?php
 
-namespace CLSystems\PhalCMS\Lib\Form;
+namespace CLSystems\PhalCMS\Library\Form;
 
 use CLSystems\Php\Registry;
 
@@ -66,7 +66,7 @@ class Form
 		$subject = $this->prefixNameField . $fieldName . $this->suffixNameField;
 
 		return str_replace('{prefix}', $replace, $subject);
-	}	
+	}
 
 	public function bind($data, array $translationsData = [])
 	{

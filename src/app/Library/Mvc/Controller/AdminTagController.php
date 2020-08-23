@@ -1,8 +1,8 @@
 <?php
 
-namespace CLSystems\PhalCMS\Lib\Mvc\Controller;
+namespace CLSystems\PhalCMS\Library\Mvc\Controller;
 
-use CLSystems\PhalCMS\Lib\Mvc\Model\Tag;
+use CLSystems\PhalCMS\Library\Mvc\Model\Tag;
 
 class AdminTagController extends AdminControllerBase
 {

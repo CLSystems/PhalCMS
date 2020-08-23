@@ -5,11 +5,11 @@ namespace CLSystems\PhalCMS\Plugin\Cms\SocialLogin;
 use Phalcon\Mvc\Router;
 use Facebook\Facebook;
 use Google_Client;
-use CLSystems\PhalCMS\Lib\Helper\Asset;
-use CLSystems\PhalCMS\Lib\Helper\State;
-use CLSystems\PhalCMS\Lib\Helper\Uri;
-use CLSystems\PhalCMS\Lib\Helper\Text;
-use CLSystems\PhalCMS\Lib\Plugin;
+use CLSystems\PhalCMS\Library\Helper\Asset;
+use CLSystems\PhalCMS\Library\Helper\State;
+use CLSystems\PhalCMS\Library\Helper\Uri;
+use CLSystems\PhalCMS\Library\Helper\Text;
+use CLSystems\PhalCMS\Library\Plugin;
 
 class SocialLogin extends Plugin
 {
