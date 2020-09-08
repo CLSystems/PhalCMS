@@ -29,7 +29,7 @@ require_once __DIR__ . '/install.sh.php';
             </h3>
             <p class="uk-text-muted uk-margin-remove">
 				<?php if ($isEnvDev): ?>
-                    The PhalCMS is running from <strong>DOCKER</strong>, if the admin path is
+                    If PhalCMS is running from <strong>DOCKER</strong>, if the admin path is
                     <em>admin</em> then you can login to the admin page at <em>http://localhost:8000/admin</em>
 				<?php else: ?>
                     After install you can login with the username/password:

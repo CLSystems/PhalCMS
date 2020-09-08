@@ -2,7 +2,7 @@
 
 defined('BASE_PATH') or die;
 
-if (!version_compare(PHP_VERSION, '7.2', 'ge'))
+if (!version_compare(PHP_VERSION, '7.3', 'ge'))
 {
 	die('PhalCMS require PHP version 7.2 or greater');
 }
@@ -32,7 +32,7 @@ use Phalcon\Loader;
 use Phalcon\Http\Request;
 use Phalcon\Security;
 use Phalcon\Db\Adapter\Pdo\Mysql;
-use CLSystems\PhalCMS\Lib\Helper\Database;
+use CLSystems\PhalCMS\Library\Helper\Database;
 
 // We are in a docker if this is a cli env
 $request = new Request;
@@ -43,7 +43,7 @@ if ($request->isAjax() && $request->isPost())
 	$loader  = new Loader;
 	$loader->registerNamespaces(
 		[
-			'CLSystems\\PhalCMS\\Lib' => $appPath . '/Library',
+			'CLSystems\\PhalCMS\\Library' => $appPath . '/Library',
 		]
 	);
 
@@ -117,14 +117,14 @@ if ($request->isAjax() && $request->isPost())
 		$env = <<<INI
 [DB]
 HOST   = {$dbParams['host']}
-USER   = {$dbParams['username']}
-PASS   = {$dbParams['password']}
-NAME   = {$dbParams['dbname']}
+USER   = "{$dbParams['username']}"
+PASS   = "{$dbParams['password']}"
+NAME   = "{$dbParams['dbname']}"
 PREFIX = {$dbPrefix}
 
 [SECRET]
-CRYPT_KEY = {$security->hash($security->getRandom()->uuid())}
-ROOT_KEY  = {$userSecret}
+CRYPT_KEY = "{$security->hash($security->getRandom()->uuid())}"
+ROOT_KEY  = "{$userSecret}"
 INI;
 		if (false === file_put_contents($envIniFile, $env))
 		{
