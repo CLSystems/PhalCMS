@@ -4,7 +4,8 @@ ini_set('display_errors', 'true');
 
 use CLSystems\PhalCMS\Library\Factory;
 
-require_once dirname(__DIR__) . '/app/Library/Factory.php';
+define('BASE_PATH', dirname(__DIR__));
+require_once BASE_PATH . '/app/Library/Factory.php';
 
 // Execute application
 Factory::getApplication()->execute();
