@@ -32,7 +32,8 @@
 		"ext-phalcon": "~4",
 		"ext-json": "*",
 		"ext-mbstring": "*",
-		"ext-zip": "*"
+		"ext-zip": "*",
+		"friendsofphp/php-cs-fixer": "^2.16"
 	},
 	"require-dev": {
 		"phpunit/phpcov": "^7",
