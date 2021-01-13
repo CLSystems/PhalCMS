@@ -6,6 +6,8 @@ A Content Management System based on Phalcon v4 and UIKit v3
 - PHP >= 7.2
 - MySql >= 5.7
 - Phalcon >= 4.0
+- PHP JSON extension
+- PHP MBSTRING extension
 - PHP ZIP extension
 - PHP mod-rewrite
 - <a href="https://getcomposer.org/doc/00-intro.md#installation-linux-unix-osx" rel="nofollow">Composer</a>
@@ -18,6 +20,7 @@ A Content Management System based on Phalcon v4 and UIKit v3
 - Multilingual
 - Categories nested (Nested Set Model)
 - Posts
+- Products
 - Comments
 - Custom fields
 - Menus
