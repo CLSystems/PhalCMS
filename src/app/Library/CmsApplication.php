@@ -54,8 +54,7 @@ class CmsApplication extends Application
                     TPL_SITE_PATH . '/Tmpl/',
                     TPL_SITE_PATH . '/',
                 ];
-            }
-            else {
+            } else {
                 $viewDirs = [
                     TPL_ADMINISTRATOR_PATH . '/',
                 ];
@@ -79,7 +78,7 @@ class CmsApplication extends Application
                         }
 
                         if (is_dir($pluginPath . '/Library')) {
-                            $psrPaths['CLSystems\\PhalCMS\\Lib'] = $pluginPath . '/Library';
+                            $psrPaths['CLSystems\\PhalCMS\\Library'] = $pluginPath . '/Library';
                         }
 
                         if (is_dir($pluginPath . '/Widget')) {
@@ -109,16 +108,14 @@ class CmsApplication extends Application
                 if (strpos($requestUri, '/user/') !== 0) {
                     $requestUri = '';
                 }
-            }
-            else {
+            } else {
                 $view->setMainView('Index');
             }
 
             $view->setViewsDir($viewDirs);
             $this->setEventsManager($eventsManager);
             $this->handle($requestUri)->send();
-        }
-        catch (Exception $e) {
+        } catch (Exception $e) {
             if (DEVELOPMENT_MODE) {
                 // To Phalcon Debug catch this
                 throw $e;
@@ -153,8 +150,7 @@ class CmsApplication extends Application
                 );
                 $view->finish();
                 echo $view->getContent();
-            }
-            catch (Exception $e2) {
+            } catch (Exception $e2) {
                 debugVar($e2->getMessage());
             }
         }
@@ -171,8 +167,7 @@ class CmsApplication extends Application
                     'svg' => 'data:image/svg+xml',
                 ]
             );
-        }
-        else {
+        } else {
             $compressor = new Minify\JS;
         }
 
