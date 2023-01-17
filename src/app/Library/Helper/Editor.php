@@ -22,7 +22,7 @@ HTML;
 			Asset::addFile('core.js');
 			$rootUri = DOMAIN;
 			$assets  = Factory::getService('assets');
-			$assets->addJs($rootUri . '/assets/editors/tinymce/tinymce.min.js', false)
+			$assets->addJs($rootUri . '/assets/editors/tinymce/tinymce.js', false)
 				->addInlineJs(
 					<<<JAVASCRIPT
 cmsCore.initTinyMCE = function (element, editorHeight) {
