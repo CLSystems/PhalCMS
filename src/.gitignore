@@ -1,0 +1,10 @@
+.idea
+app/Plugin/Cms/SocialLogin/vendor/
+cache/*
+public/assets/compressed
+public/stats
+public/upload/deals/*
+public/upload/logo/*
+vendor
+composer.lock
+config.ini

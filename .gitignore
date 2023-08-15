@@ -1,0 +1,14 @@
+.idea
+composer.lock
+docker/db/*
+vendor/*
+cache/volt/*
+public/assets/compressed/*
+public/assets/images/printer/*
+public/stats/*
+public/upload/deals/*
+public/upload/logo/*
+public/upload/thumbs/*
+public/upload/*/thumbs/*
+src/config.ini
+src/tests/.phpunit.result.cache

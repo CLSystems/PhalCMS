@@ -1,0 +1,96 @@
+#!/usr/bin/php -q
+<?php
+
+// declare(strict_types=1);
+
+use Phalcon\Cli\Console;
+use Phalcon\Cli\Dispatcher;
+use Phalcon\Config\Adapter\Ini;
+use Phalcon\Db\Adapter\Pdo\Mysql;
+use Phalcon\Di\FactoryDefault\Cli as CliDI;
+use Phalcon\Cli\Console\Exception as PhalconException;
+use Phalcon\Autoload\Loader;
+
+const BASE_PATH = __DIR__;
+require_once BASE_PATH . '/vendor/autoload.php';
+require_once BASE_PATH . '/src/app/Lib/Factory.php';
+
+$loader = new Loader();
+$loader->setNamespaces(
+	[
+		'CLSystems\\PhalCMS'        => BASE_PATH . '/src/app/',
+		'CLSystems\\PhalCMS\\Tasks' => BASE_PATH . '/src/tasks/',
+	]
+);
+$loader->register();
+
+$container = new CliDI();
+$dispatcher = new Dispatcher();
+$dispatcher->setDefaultNamespace('CLSystems\PhalCMS\Tasks');
+$container->setShared('dispatcher', $dispatcher);
+
+$config = new Ini(BASE_PATH . '/src/config.ini', INI_SCANNER_NORMAL);
+$dbPrefix = $config->path('DB.PREFIX');
+
+try
+{
+	$db = new Mysql(
+		[
+			'host'     => $config->path('DB.HOST'),
+			'username' => $config->path('DB.USER'),
+			'password' => $config->path('DB.PASS'),
+			'dbname'   => $config->path('DB.NAME'),
+			'charset'  => 'utf8mb4',
+		]
+	);
+}
+catch (Exception $exception)
+{
+	die($exception->getCode() . ' - ' . $exception->getMessage());
+}
+
+$container->setShared('db', $db);
+$container->getShared('modelsManager')->setModelPrefix($dbPrefix);
+
+$console = new Console($container);
+$container->setShared('console', $console);
+
+$arguments = [];
+foreach ($argv as $k => $arg)
+{
+	if ($k === 1)
+	{
+		$arguments['task'] = $arg;
+	}
+	else if ($k === 2)
+	{
+		$arguments['action'] = $arg;
+	}
+	else if ($k >= 3)
+	{
+		$arguments['params'][] = $arg;
+	}
+}
+
+try
+{
+	$console->handle($arguments);
+}
+catch (PhalconException $exception)
+{
+	fwrite(STDERR, $exception->getMessage() . PHP_EOL);
+	fwrite(STDERR, $exception->getTraceAsString() . PHP_EOL);
+	exit(1);
+}
+catch (Exception $exception)
+{
+	fwrite(STDERR, $exception->getMessage() . PHP_EOL);
+	fwrite(STDERR, $exception->getTraceAsString() . PHP_EOL);
+	exit(1);
+}
+catch (Throwable $throwable)
+{
+	fwrite(STDERR, $throwable->getMessage() . PHP_EOL);
+	fwrite(STDERR, $throwable->getTraceAsString() . PHP_EOL);
+	exit(1);
+}
