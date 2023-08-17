@@ -1,7 +1,7 @@
 {
   "name": "clsystems/phalcms",
   "type": "project",
-  "description": "A Content Management System built with Phalcon v4 and UiKit v3",
+  "description": "A Content Management System built with Phalcon and UiKit.",
   "keywords": [
     "phalcms",
     "cms",
@@ -24,9 +24,7 @@
     }
   ],
   "require": {
-    "clsystems/daisycon-api-client": "~1.0",
     "clsystems/php-registry": "1.0.0",
-    "clsystems/tt-api-client": "^1.0",
     "google/apiclient": "^2.4",
     "guzzlehttp/guzzle": "6.5.5",
     "matthiasmullie/minify": "1.3.63",
@@ -39,7 +37,6 @@
     "ext-mysqli": "*",
     "ext-pdo": "*",
     "ext-soap": "*",
-    "clsystems/sl-api-client": "^0.0.2",
     "imagecow/imagecow": "^2.4",
     "rosell-dk/webp-convert": "^2.9",
     "onnov/detect-encoding": "^2.0",

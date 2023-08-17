@@ -5,12 +5,9 @@
       data-uri-root="{{ constant('DOMAIN') }}"
       data-uri-base="{{ helper('Uri::getBaseUriPrefix') }}">
 <head>
-    <meta name='ir-site-verification-token' value='-2029198168' />
     <meta charset="utf-8"/>
     <meta name="Cache-Control" content="public; max-age=262800">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="tradetracker-site-verification" content="c70bb2eb887731a6f422e7c73327fc4c9b537044" />
-    <meta name="verification" content="3f8422a0391b4139f9757b9126474384" />
     <meta name="theme-color" content="#4285f4">
     <link rel="manifest" href="{{ constant('DOMAIN') ~ '/manifest.json' }}">
     <!-- VDS1 -->
@@ -41,8 +38,8 @@
     <link rel="canonical" href="{{ helper('Uri::fromServer') }}" />
 
     {% block head %}{% endblock %}
-    <link rel="shortcut icon" href="{{ constant('DOMAIN') ~ '/assets/images/icon-sale-shopping-bag-55x65.webp' }}"/>
-    <link rel="apple-touch-icon" href="{{ constant('DOMAIN') ~ '/assets/images/icon-sale-shopping-bag-55x65.webp' }}"/>
+    <link rel="shortcut icon" href="{{ constant('DOMAIN') ~ '/assets/images/phalcms-logo.jpg.webp' }}"/>
+    <link rel="apple-touch-icon" href="{{ constant('DOMAIN') ~ '/assets/images/phalcms-logo.jpg.webp' }}"/>
 
     <link rel="stylesheet" type="text/css" href="{{ constant('DOMAIN') ~ '/assets/css/uikit.min.css' }}"/>
     <link rel="stylesheet" type="text/css" href="{{ constant('DOMAIN') ~ '/assets/css/custom.css' }}?{{ date("ymdH") }}"/>
@@ -53,11 +50,11 @@
         {
             "@context": "https://schema.org",
             "@type": "Organization",
-            "name": "Korting En Acties",
-            "url": "https://korting-en-acties.nl",
-            "description": "Ben jij helemaal verslaafd aan korting en acties? Bekijk dan ons zeer uitgebreide aanbod. Pak jouw korting snel.",
-            "image": "{{ constant('DOMAIN') ~ '/assets/images/icon-sale-shopping-bag.webp' }}",
-            "logo": "{{ constant('DOMAIN') ~ '/assets/images/icon-sale-shopping-bag-55x65.webp' }}","sameAs": ["https://facebook.com/Korting-Acties-106458424472234/", "https://instagram.com/korting-acties-nl/", "https://nl.pinterest.com/jeroenguyt/korting-acties/"],
+            "name": "PhalCMS",
+            "url": "https://phalcms.net",
+            "description": "Content management made easy!",
+            "image": "{{ constant('DOMAIN') ~ '/assets/images/phalcms-logo.jpg.webp' }}",
+            "logo": "{{ constant('DOMAIN') ~ '/assets/images/phalcms-logo.jpg.webp' }}",
             "telephone": "0647794655",
             "address": {
                 "@type": "PostalAddress",
@@ -74,12 +71,12 @@
         {
             "@context": "https://schema.org",
             "@type": "WebSite",
-            "name": "Korting & Acties",
-            "url": "https://korting-en-acties.nl",
+            "name": "PhalCMS",
+            "url": "https://phalcms.net",
             "potentialAction": {
                 "@type": "SearchAction",
                 "query-input": "required name=query",
-                "target": "https://korting-en-acties.nl/search?q={query}"
+                "target": "https://phalcms.net/search?q={query}"
             }
         }
     </script>

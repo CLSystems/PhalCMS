@@ -4,4 +4,4 @@ Disallow: /admin/
 User-agent: *
 Allow: /
 
-Sitemap: https://korting-en-acties.nl/sitemap
+Sitemap: https://phalcms.net/sitemap

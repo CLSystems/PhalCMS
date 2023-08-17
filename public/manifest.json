@@ -1,11 +1,11 @@
 {
-  "short_name": "KenA",
-  "name": "Korting en Acties",
+  "short_name": "PCMS",
+  "name": "PhalCMS",
   "icons": [
     {
-      "src": "https://korting-en-acties.nl/assets/images/icon-sale-shopping-bag-144x144.png",
+      "src": "https://phalcms.net/assets/images/phalcms-logo.jpg.webp",
       "type": "image/png",
-      "sizes": "144x144"
+      "sizes": "460x450"
     }
   ],
   "start_url": "/",
@@ -15,13 +15,13 @@
   "theme_color": "#4285f4",
   "shortcuts": [
     {
-      "name": "Korting en Acties",
-      "short_name": "KenA",
-      "description": "Kortingen en acties voor bijna alles",
+      "name": "PhalCMS",
+      "short_name": "PCMS",
+      "description": "Content management made easy!",
       "url": "/",
-      "icons": [{ "src": "https://korting-en-acties.nl/assets/images/icon-sale-shopping-bag-144x144.png", "sizes": "144x144" }]
+      "icons": [{ "src": "https://phalcms.net/assets/images/phalcms-logo.jpg.webp", "sizes": "460x450" }]
     }
   ],
-  "description": "Kortingen en acties voor bijna alles",
+  "description": "Content management made easy!",
   "screenshots": []
 }
