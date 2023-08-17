@@ -32,13 +32,13 @@ require_once __DIR__ . '/install.sh.php';
             <p class="uk-text-muted uk-margin-remove">
 				<?php if ($isEnvDev): ?>
                     The PhalCMS is running from <strong>DOCKER</strong>, if the admin path is
-                    <em>admin</em> then you can login to the admin page at <em>http://localhost:8000/admin</em>
+                    <em>admin</em> then you can log in to the admin page at <em>http://localhost:8000/admin</em>
 				<?php else: ?>
-                    After install you can login with the username/password:
+                    After install you can log in with the username/password:
                     <strong>admin/admin</strong> and don't forget to change them from the admin users page.
                                                  You must enter the admin path then you can access with your admin
                                                  panel, for eg:<br/>
-                    The admin path is <em>my/admin</em> then you can login to the admin page at <em>http://yourdomain/my/admin</em>
+                    The admin path is <em>my/admin</em> then you can log in to the admin page at <em>http://yourdomain/my/admin</em>
 				<?php endif; ?>
             </p>
         </div>

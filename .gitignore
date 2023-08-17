@@ -12,3 +12,4 @@ public/upload/thumbs/*
 public/upload/*/thumbs/*
 src/config.ini
 src/tests/.phpunit.result.cache
+src/app/Plugin/System/Backup/Archived/Backup*.zip

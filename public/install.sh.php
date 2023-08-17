@@ -2,26 +2,26 @@
 
 defined('BASE_PATH') or die;
 
-if (!version_compare(PHP_VERSION, '7.2', 'ge'))
+if (!version_compare(PHP_VERSION, '8.0', 'ge'))
 {
-	die('PhalCMS require PHP version 7.2 or greater');
+	die('PhalCMS requires PHP version 8.0 or greater');
 }
 
 if (!class_exists('PDO')
 	|| !in_array('mysql', PDO::getAvailableDrivers())
 )
 {
-	die('PhalCMS require Pdo Mysql driver version 5.7 or greater');
+	die('PhalCMS requires PDO Mysql driver version 5.7 or greater');
 }
 
 if (!class_exists('Phalcon\\Version')
-	|| !version_compare(Phalcon\Version::get(), '4.0', 'ge')
+	|| !version_compare(Phalcon\Version::get(), '5.0', 'ge')
 )
 {
-	die('PhalCMS requires Phalcon version 4.0 or greater');
+	die('PhalCMS requires Phalcon version 5.0 or greater');
 }
 
-$envIniFile = BASE_PATH . '/config.ini';
+$envIniFile = BASE_PATH . '/src/config.ini';
 
 if (is_file($envIniFile))
 {
@@ -39,7 +39,7 @@ $request = new Request;
 
 if ($request->isAjax() && $request->isPost())
 {
-	$appPath = BASE_PATH . '/app';
+	$appPath = BASE_PATH . '/src/app';
 	$loader  = new Loader;
 	$loader->setNamespaces(
 		[
