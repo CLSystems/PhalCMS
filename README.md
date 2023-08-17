@@ -1,11 +1,11 @@
 # PhalCMS
-A Content Management System based on Phalcon v4 and UIKit v3
+A Content Management System based on Phalcon v5 and UIKit.
 
 ## Requirements
 - Apache
-- PHP >= 7.2
+- PHP >= 8.0
 - MySql >= 5.7
-- Phalcon >= 4.0
+- Phalcon >= 5.0
 - PHP ZIP extension
 - PHP mod-rewrite
 - <a href="https://getcomposer.org/doc/00-intro.md#installation-linux-unix-osx" rel="nofollow">Composer</a>
@@ -32,10 +32,10 @@ A Content Management System based on Phalcon v4 and UIKit v3
 - ...
 
 ## Core assets - a HUGE thank you to
-- Jquery v1.12.4
+- Jquery v3.6.0
 - Jquery ui v1.12.1
 - Jquery nested
-- UIkit v3.3.2
+- UIkit v3.15.22
 
 # Installation for Development
 ### Clone this repo
@@ -66,18 +66,7 @@ composer install
 Create a database with utf8mb4_unicode_ci collation.
 Default database name is phalcms.
 
-Make sure to setup your domain in such a way that 'src/public' is the webdirectory.
-ie: "Document Root /var/www/example.tld/src/public"
+Make sure to setup your domain in such a way that '/public' is the webdirectory.
+ie: "Document Root /var/www/example.tld/public"
 ```
 Browse to http://example.tld and enjoy
-
-# OR
-
-## Build with Docker
-```sh
-cd ../
-docker-compose build
-docker-compose up -d
-```
-
-Browse http://localhost:8000 and enjoy
